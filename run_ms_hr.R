@@ -6,6 +6,7 @@
 ### ------------------------------------------------------------------------ ###
 ### arguments ####
 ### ------------------------------------------------------------------------ ###
+args_local <- c("fhist='one-way'", "stock_id=12", "scenario='test'", "ga_search=TRUE", "popSize=10", "maxiter=10", "multiplier=TRUE")#args_local <- c("fhist='one-way'", "stock_id=12", "scenario='test'")
 
 args <- commandArgs(TRUE)
 if (exists(x = "args_local")) args <- append(args, args_local)
