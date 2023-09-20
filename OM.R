@@ -1,6 +1,8 @@
 ### ------------------------------------------------------------------------ ###
 ### create OMs ####
 ### ------------------------------------------------------------------------ ###
+args_local <- c("n_workers=0", "n_iter=500", "yrs_hist=100", "yrs_proj=50", "fhist='one-way'", "stock_id=12", "OM=TRUE")
+#args_local <- c("n_workers=0", "n_iter=500", "yrs_hist=100", "yrs_proj=50", "fhist='random'", "stock_id=12", "OM=TRUE")
 
 args <- commandArgs(TRUE)
 if (exists(x = "args_local")) args <- append(args, args_local)
@@ -17,7 +19,7 @@ for (i in seq_along(args)) eval(parse(text = args[[i]]))
 ### load packages
 ### use mse fork from shfischer/mse, branch mseDL2.0 
 ### remotes::install_github("shfischer/mse", ref = "mseDL2.0)
-req_pckgs <- c("FLCore", "FLash", "FLBRP", "mse", "FLife", 
+req_pckgs <- c("FLCore", "FLash", "FLBRP", "mse", 
                "tidyr", "dplyr", "foreach", "doParallel")
 for (i in req_pckgs) library(package = i, character.only = TRUE)
 

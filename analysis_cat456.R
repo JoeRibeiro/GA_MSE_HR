@@ -26,12 +26,12 @@ brps <- readRDS("input/brps.rds")
 
 
 ### stock status
-input <- readRDS("input/10000_100/OM/random/pol/stk.rds")
+input <- readRDS("input/500_50/OM/one-way/pol/stk.rds")
 Blim <- attr(brps$pol, "Blim")
 Bmsy <- brps$pol@refpts["msy", "ssb"]
 MSY <- brps$pol@refpts["msy", "yield"]
 
-res <- readRDS(paste0("output/const_catch/10000_100/baseline/random/pol/", 
+res <- readRDS(paste0("output/const_catch/500_50/baseline/random/pol/", 
                       "mp_const_catch_3_3_0.8_Inf_0_0.2_0.2_0_0_0.6_0_0.75.rds"))
 ### collapse correction
 res_corrected <- collapse_correction(stk = res@stock, yrs = 101:200)
