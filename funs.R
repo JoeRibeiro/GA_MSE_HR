@@ -268,6 +268,72 @@ est_pa <- function(idx, ay, tracking, pa_size, pa_duration, idxB_lag,
   
 }
 
+
+
+est_pa_conditional <- function(idx, ay, tracking, pa_size, pa_duration, idxB_lag, idx_f, ay_f, 
+                               Lref_f, idxL_range_f, idxL_lag_f,
+                   ...) {
+  
+  ### if fewer iterations provided expand
+  if (isTRUE(length(Lref_f) < dims(idx_f)$iter)) {
+    Lref_f <- rep(Lref_f, dims(idx_f)$iter)
+    ### if more iterations provided, subset
+  } else if (isTRUE(length(Lref_f) > dims(idx_f)$iter)) {
+    Lref_f <- Lref_f[an(dimnames(idx_f)$iter)]
+  }
+  
+  ### get mean length in catch
+  idx_yrs <- seq(to = ay_f - idxL_range_f, length.out = idxL_lag_f)
+  idx_mean <- yearMeans(idx_f[, ac(idx_yrs)])
+  ### length relative to reference
+  idx_ratio <- c(idx_mean / Lref_f)
+  ### avoid negative values
+  idx_ratio <- ifelse(idx_ratio > 0, idx_ratio, 0)
+  ### avoid NAs, happens if catch = 0
+  idx_ratio <- ifelse(is.na(idx_ratio), 1, idx_ratio)
+
+  
+  if(idx_ratio > 1) { # Long fish are good.
+    
+  }else{ # Fish are little and this is not good.
+    
+  } 
+
+
+### find last year in which buffer was applied
+  last <- apply(tracking["comp_b",,, drop = FALSE], 6, FUN = function(x) {#browser()
+    ### positions (years) where buffer was applied
+    yr <- dimnames(x)$year[which(x < 1)]
+    ### return -Inf if buffer was never applied
+    ifelse(length(yr) > 0, as.numeric(yr), -Inf)
+  })
+  ### find iterations to check 
+  pos_check <- which(last <= (ay - pa_duration))
+  ### find negative stock status (SSB<0.5Bmsy or F>Fmsy)
+  pos_negative <- which(idx[, ac(ay - idxB_lag)] == 0)
+  ### apply only if buffer applications need to be checked and status is negative
+  pos_apply <- intersect(pos_check, pos_negative)
+  
+  return(ifelse(seq(dims(last)$iter) %in% pos_apply, pa_size, 1))
+ 
+  
+  
+  
+  
+  
+
+  
+  
+  
+   
+}
+
+
+
+
+
+
+
 ### index value
 est_i <- function(idx, ay,
                   idxB_lag, idxB_range_3,
