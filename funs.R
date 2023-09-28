@@ -296,7 +296,7 @@ est_pa_conditional <- function(Lref, ### reference length (LF=M)
   
   ### if fewer iterations provided expand
   if (isTRUE(length(Lref) < dims(idx)$iter)) {
-    Lref <- rep(Lref, dims(idx)$iter)
+    Lref <- rep(c(Lref), dims(idx)$iter)
     ### if more iterations provided, subset
   } else if (isTRUE(length(Lref) > dims(idx)$iter)) {
     Lref <- Lref[an(dimnames(idx)$iter)]
