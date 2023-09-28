@@ -281,6 +281,7 @@ est_pa <- function(idx, ay, tracking, pa_size, pa_duration, idxB_lag,
   
 }
 
+
 est_pa_conditional <- function(Lref, ### reference length (LF=M)
                                idx, ### length index
                                ay, ### current (intermediate) year
@@ -334,6 +335,7 @@ est_pa_conditional <- function(Lref, ### reference length (LF=M)
   return(res)
   
 }
+
 
 ### index value
 est_i <- function(idx, ay,
