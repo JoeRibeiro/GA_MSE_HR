@@ -34,7 +34,7 @@ MSY <- brps$pol@refpts["msy", "yield"]
 res <- readRDS(paste0("output/const_catch/500_50/baseline/random/pol/", 
                       "mp_const_catch_3_3_0.8_Inf_0_0.2_0.2_0_0_0.6_0_0.75.rds"))
 ### collapse correction
-res_corrected <- collapse_correction(stk = res@stock, yrs = 101:200)
+res_corrected <- collapse_correction(stk = res@stock, yrs = 101:150)
 ### starting condition
 SSBs0 <- ssb(res@stock)[, ac(100)]
 SSBs0 <- SSBs0/c(brps$pol@refpts["msy", "ssb"])
@@ -94,32 +94,32 @@ stats_sens_time <- foreach(fhist = c("random", "one-way"),
   .combine = rbind) %do% {
   #browser()
   file <- "mp_const_catch_3_3_0.8_Inf_0_0.2_0.2_0_0_0.6_0_0.75"
-  res <- readRDS(paste0("output/const_catch/10000_100/baseline/", fhist, 
+  res <- readRDS(paste0("output/const_catch/500_50/baseline/", fhist, 
                        "/pol/", file, ".rds"))
   
   ### collapse correction
-  res_corrected <- collapse_correction(stk = res@stock, yrs = 101:200)
+  res_corrected <- collapse_correction(stk = res@stock, yrs = 101:150)
   ### template
-  tmp <- data.frame(year = 1:100)
+  tmp <- data.frame(year = 1:50)
   ### Blim risk
-  tmp$risk_average <- sapply(1:100, function(x) {
+  tmp$risk_average <- sapply(1:50, function(x) {
    mean(c(res_corrected$ssb[, ac(seq(from = 101, length.out = x))] < Blim), 
         na.rm = TRUE)
   })
   tmp$risk_annual <- c(apply(res_corrected$ssb < Blim, 2, mean, na.rm = TRUE))
   ### SSB
-  tmp$SSB_annual <- sapply(1:100, function(x) {
+  tmp$SSB_annual <- sapply(1:50, function(x) {
    median(c(res_corrected$ssb[, x]/Bmsy), na.rm = TRUE)
   })
-  tmp$SSB_average <-  sapply(1:100, function(x) {
+  tmp$SSB_average <-  sapply(1:50, function(x) {
    median(c(res_corrected$ssb[, ac(seq(from = 101, length.out = x))]/Bmsy), 
           na.rm = TRUE)
   })
   ### Catch
-  tmp$Catch_annual <- sapply(1:100, function(x) {
+  tmp$Catch_annual <- sapply(1:50, function(x) {
    median(c(res_corrected$catch[, x]/MSY), na.rm = TRUE)
   })
-  tmp$Catch_average <-  sapply(1:100, function(x) {
+  tmp$Catch_average <-  sapply(1:50, function(x) {
    median(c(res_corrected$catch[, ac(seq(from = 101, length.out = x))]/MSY), 
           na.rm = TRUE)
   })
@@ -237,7 +237,7 @@ p
 ### risk & projection time - all stocks ####
 ### ------------------------------------------------------------------------ ###
 ### 500 iters, 100 years, all stocks, one-way & random
-
+stop('I have not done these stocks, only pollack')
 stats_risk <- foreach(stock = stocks$stock, k = stocks$k, 
                       .combine = bind_rows) %:%
   foreach(fhist = c("one-way", "random"), .combine = bind_rows)  %do% {
@@ -246,35 +246,35 @@ stats_risk <- foreach(stock = stocks$stock, k = stocks$k,
                           stock, "/mp_const_catch_3_3_0.8_Inf_0_0.2_0.2_0_0_",
                           "0.6_0_0.75.rds"))
     ### collapse correction
-    res_corrected <- collapse_correction(stk = res@stock, yrs = 101:200)
+    res_corrected <- collapse_correction(stk = res@stock, yrs = 101:150)
     
     ### get fishing history
     stk <- readRDS(paste0("input/500_100/OM/", fhist, "/", stock, "/stk.rds"))
     ssb_ <- ssb(stk)
     catch_ <- catch(stk)
     ### add simulated values
-    ssb_[, ac(101:200)] <- res_corrected$ssb
-    catch_[, ac(101:200)] <- res_corrected$catch
+    ssb_[, ac(101:150)] <- res_corrected$ssb
+    catch_[, ac(101:150)] <- res_corrected$catch
     
     ### metrics (relative)
     ssb_rel <- ssb_/c(refpts(brps[[stock]])["msy", "ssb"])
     catch_rel <- catch_/c(refpts(brps[[stock]])["msy", "yield"])
     risk <- apply(ssb_ < attr(brps[[stock]], "Blim"), 2, mean)
-    risk[, ac(1:100)] <- NA
+    risk[, ac(1:50)] <- NA
     
     ### cumulative values (year 101 to year x)
     ssb_rel_cum <- iterMeans(ssb_rel) %=% NA_real_
-    ssb_rel_cum[, ac(101:200)] <- sapply(1:100, function(x) {
+    ssb_rel_cum[, ac(101:150)] <- sapply(1:50, function(x) {
       median(c(ssb_rel[, ac(seq(from = 101, length.out = x))]), 
            na.rm = TRUE)
     })
     catch_rel_cum <- iterMeans(catch_rel) %=% NA_real_
-    catch_rel_cum[, ac(101:200)] <- sapply(1:100, function(x) {
+    catch_rel_cum[, ac(101:150)] <- sapply(1:50, function(x) {
       median(c(catch_rel[, ac(seq(from = 101, length.out = x))]), 
              na.rm = TRUE)
     })
     risk_cum <- iterMeans(ssb_rel) %=% NA_real_
-    risk_cum[, ac(101:200)] <- sapply(1:100, function(x) {
+    risk_cum[, ac(101:150)] <- sapply(1:50, function(x) {
         mean(c(ssb_[, ac(seq(from = 101, length.out = x))] < attr(brps[[stock]], "Blim")), 
              na.rm = TRUE)
       })

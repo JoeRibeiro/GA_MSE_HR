@@ -40,7 +40,7 @@
 #args_local <- c("n_workers=0", "n_iter=500", "yrs_hist=100", "yrs_proj=50", "fhist='one-way'", "stock_id=12", "OM=TRUE")
 #args_local <- c("use_MPI=FALSE", "n_workers=0", "n_blocks=1", "popSize=10", "maxiter=5", "run=5", "stock_id=12", "n_iter=500", "n_yrs=50", "fhist='one-way'", "MP='hr'", "ga_search=TRUE", "idxB_lag=FALSE", "idxB_range_3=FALSE", "exp_b=FALSE", "comp_b_multiplier=FALSE", "interval=FALSE", "multiplier=TRUE", "upper_constraint=FALSE", "lower_constraint=FALSE", "obj_SSB=FALSE", "obj_F=FALSE", "obj_C=FALSE", "obj_risk=FALSE", "obj_ICV=FALSE", "obj_ICES_PA=FALSE", "obj_ICES_PA2=FALSE", "obj_ICES_MSYPA=TRUE", "collate=FALSE", "scenario='GA'", "stat_yrs='all'", "add_suggestions=FALSE")
 #args_local <- c("stock_id=12", "scenario='baseline'", "fhist='random'")
-#args_local <- c("stock_id=12", "scenario='baseline'", "fhist='one-way'")
+args_local <- c("stock_id=12", "scenario='baseline'", "fhist='one-way'")
 
 ### ------------------------------------------------------------------------ ###
 ### run MSE ####
@@ -76,7 +76,7 @@ for (i in seq_along(args)) eval(parse(text = args[[i]]))
   if (!exists("fhist")) fhist <- "one-way"
   
   ### MP parameters
-  if (!exists("MP")) MP <- "const_catch"
+  if (!exists("MP")) MP <- "CC_f"
   if (!exists("multiplier")) multiplier <- 1
   if (!exists("comp_r")) comp_r <- FALSE
   if (!exists("comp_f")) comp_f <- FALSE
@@ -278,8 +278,7 @@ if (isFALSE(ga_search)) {
     ### -------------------------------------------------------------------- ###
     ### generate MP input ####
     ### -------------------------------------------------------------------- ###
-    
-    input_i <- do.call(input_mp, as.list(par_i))
+    input_i <- do.call(input_mp, as.list(par_i)) # error here
     
     ### -------------------------------------------------------------------- ###
     ### paths ####
@@ -292,8 +291,9 @@ if (isFALSE(ga_search)) {
                    par_i$sigmaR, par_i$sigmaR_rho, par_i$steepness)
     file_pars <- file_pars[!is.na(file_pars)]
     file_out <- paste0(file_pars, collapse = "_")
-    path_out <- paste0("output/const_catch/", n_iter, "_", n_yrs, "/", scenario, "/",
+    path_out <- paste0("output", MP, "/", n_iter, "_", n_yrs, "/", scenario, "/",
                        fhist, "/", paste0(names(input_i), collapse = "_"), "/")
+
     dir.create(path_out, recursive = TRUE)
     ### skip if run already exists
     if (file.exists(paste0(path_out, "stats_", file_out, ".rds"))) return(NULL)
