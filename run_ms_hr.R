@@ -1,46 +1,6 @@
-# I have run the OM.r script, and I would expect to run this one, then analysis_cat456.r
-# According to simon:
 
-# You should be able to get the results by running the run_ms_hr.R script with the following arguments:
-#   
-#   args_local <- c("stock_id=12", "scenario='baseline'", "fhist='random'")
-#   args_local <- c("stock_id=12", "scenario='baseline'", "fhist='one-way'")
-#   
-#    ... but this was not creating the output analysis_cat456.r is expecting in output\const_catch\500_50\baseline\random\pol
-#
-# Simon's idea is to define how much more risk is there to not reduce catch 20% each 3 years, the current standard. If we continue catch at the current rate indefinitely what effect does this have on risk?
-# 
-#
-# Investigating I noted that:
-# goFish is inside mp
-# 
-# debugonce(goFish) reveals that changes will be passed in via:
-# ctrl0[["hcr"]]@method
-# 
-# The harvest control rule is run on the line:
-# out <- do.call("mpDispatch", ctrl.hcr)
-# 
-# which does a do.call(method, args)
-# 
-# debugonce(mpDispatch) <- Where the management procedure is finally run
-# 
-# so...
-#
-# I thought we would need a new input MP at input_i <- do.call(input_mp, as.list(par_i))
-# but it looks like Simon has already coded this.
-# I think this gets the information needed to run the managment procedure AND the model itself, saved to input[["pol"]][["ctrl"]][["hcr"]]@method
-# 
-# input_mp is in funs_om.r
-# 
-# 
-# probably start with ga search =F
-
-
-
-#args_local <- c("n_workers=0", "n_iter=500", "yrs_hist=100", "yrs_proj=50", "fhist='one-way'", "stock_id=12", "OM=TRUE")
-#args_local <- c("use_MPI=FALSE", "n_workers=0", "n_blocks=1", "popSize=10", "maxiter=5", "run=5", "stock_id=12", "n_iter=500", "n_yrs=50", "fhist='one-way'", "MP='hr'", "ga_search=TRUE", "idxB_lag=FALSE", "idxB_range_3=FALSE", "exp_b=FALSE", "comp_b_multiplier=FALSE", "interval=FALSE", "multiplier=TRUE", "upper_constraint=FALSE", "lower_constraint=FALSE", "obj_SSB=FALSE", "obj_F=FALSE", "obj_C=FALSE", "obj_risk=FALSE", "obj_ICV=FALSE", "obj_ICES_PA=FALSE", "obj_ICES_PA2=FALSE", "obj_ICES_MSYPA=TRUE", "collate=FALSE", "scenario='GA'", "stat_yrs='all'", "add_suggestions=FALSE")
-#args_local <- c("stock_id=12", "scenario='baseline'", "fhist='random'")
-args_local <- c("stock_id=12", "scenario='baseline'", "fhist='one-way'")
+#args_local <- c("stock_id=27", "scenario='baseline'", "fhist='random'")
+args_local <- c("stock_id=27", "scenario='baseline'", "fhist='one-way'")
 
 ### ------------------------------------------------------------------------ ###
 ### run MSE ####
@@ -291,7 +251,7 @@ if (isFALSE(ga_search)) {
                    par_i$sigmaR, par_i$sigmaR_rho, par_i$steepness)
     file_pars <- file_pars[!is.na(file_pars)]
     file_out <- paste0(file_pars, collapse = "_")
-    path_out <- paste0("output", MP, "/", n_iter, "_", n_yrs, "/", scenario, "/",
+    path_out <- paste0("output/", MP, "/", n_iter, "_", n_yrs, "/", scenario, "/",
                        fhist, "/", paste0(names(input_i), collapse = "_"), "/")
 
     dir.create(path_out, recursive = TRUE)

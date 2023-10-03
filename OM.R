@@ -1,8 +1,9 @@
 ### ------------------------------------------------------------------------ ###
 ### create OMs ####
 ### ------------------------------------------------------------------------ ###
-args_local <- c("n_workers=0", "n_iter=500", "yrs_hist=100", "yrs_proj=50", "fhist='one-way'", "stock_id=12", "OM=TRUE")
-#args_local <- c("n_workers=0", "n_iter=500", "yrs_hist=100", "yrs_proj=50", "fhist='random'", "stock_id=12", "OM=TRUE")
+#stop('remember to uncomment each line if running for both one-way and random.')
+#args_local <- c("n_workers=0", "n_iter=500", "yrs_hist=100", "yrs_proj=50", "fhist='one-way'", "stock_id=27", "OM=TRUE")
+args_local <- c("n_workers=0", "n_iter=500", "yrs_hist=100", "yrs_proj=50", "fhist='random'", "stock_id=27", "OM=TRUE")
 
 args <- commandArgs(TRUE)
 if (exists(x = "args_local")) args <- append(args, args_local)
@@ -25,6 +26,7 @@ for (i in req_pckgs) library(package = i, character.only = TRUE)
 
 ### load additional functions
 source("funs.R")
+source("season_functions.R")
 
 ### ------------------------------------------------------------------------ ###
 ### setup parallel environment ####
@@ -90,6 +92,13 @@ stocks <- read.csv("input/stocks.csv", stringsAsFactors = FALSE)
 ### BRPs from Fischer et al. (2020)
 brps <- readRDS("input/brps.rds")
 
+# Changes to seasonalise a stock, here we modify the original brps
+brps[["sar"]]@params = FLPar(NA, dimnames=list(params=c("a","b"), season=1:4, iter=1))
+#S-R takes places in q4
+brps[["sar"]]@params[1,4]=51.2
+brps[["sar"]]@params[2,4]=90.9
+
+
 ### create FLStocks
 stocks_subset <- stocks$stock[stock_id]#"bll"
 
@@ -97,7 +106,7 @@ if (exists("OM")) {
   
   if (isTRUE(OM)) {
     
-    stks_hist <- foreach(stock = stocks_subset, .errorhandling = "pass", 
+    stks_hist <- foreach(stock = stocks_subset, .errorhandling = "stop", 
                          .packages = c("FLCore", "FLash", "FLBRP")) %dopar% {
       stk <- as(brps[[stock]], "FLStock")
       refpts <- refpts(brps[[stock]])
@@ -106,8 +115,12 @@ if (exists("OM")) {
       })
       stk <- stf(stk, yrs_hist + yrs_proj - dims(stk)$year + 1)
       stk <- propagate(stk, n_iter)
+      unpack <- seasonalise(stk)
+      stk = unpack[[1]]
+      srk_sr = unpack[[2]]
       ### create stock recruitment model
-      stk_sr <- FLSR(params = params(brps[[stock]]), model = model(brps[[stock]]))
+      #stk_sr <- FLSR(params = params(brps[[stock]]), model = model(brps[[stock]]))
+
       ### create residuals for (historical) projection
       set.seed(0)
       residuals(stk_sr) <- rlnoise(dim(stk)[6], rec(stk) %=% 0, 

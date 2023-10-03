@@ -31,8 +31,8 @@ Blim <- attr(brps$pol, "Blim")
 Bmsy <- brps$pol@refpts["msy", "ssb"]
 MSY <- brps$pol@refpts["msy", "yield"]
 
-res <- readRDS(paste0("output/const_catch/500_50/baseline/random/pol/", 
-                      "mp_const_catch_3_3_0.8_Inf_0_0.2_0.2_0_0_0.6_0_0.75.rds"))
+res <- readRDS(paste0("output/CC_f/500_50/baseline/random/pol/", 
+                      "mp_CC_f_3_3_0.8_Inf_0_0.2_0.2_0_0_0.6_0_0.75.rds"))
 ### collapse correction
 res_corrected <- collapse_correction(stk = res@stock, yrs = 101:150)
 ### starting condition
@@ -93,8 +93,8 @@ stats_risk_depletion <- stats_risk_depletion[order(stats_risk_depletion$SSB0_rel
 stats_sens_time <- foreach(fhist = c("random", "one-way"),
   .combine = rbind) %do% {
   #browser()
-  file <- "mp_const_catch_3_3_0.8_Inf_0_0.2_0.2_0_0_0.6_0_0.75"
-  res <- readRDS(paste0("output/const_catch/500_50/baseline/", fhist, 
+  file <- "mp_CC_f_3_3_0.8_Inf_0_0.2_0.2_0_0_0.6_0_0.75"
+  res <- readRDS(paste0("output/CC_f/500_50/baseline/", fhist, 
                        "/pol/", file, ".rds"))
   
   ### collapse correction
@@ -242,8 +242,8 @@ stats_risk <- foreach(stock = stocks$stock, k = stocks$k,
                       .combine = bind_rows) %:%
   foreach(fhist = c("one-way", "random"), .combine = bind_rows)  %do% {
     #browser()
-    res <- readRDS(paste0("output/const_catch/500_100/baseline/", fhist,"/",
-                          stock, "/mp_const_catch_3_3_0.8_Inf_0_0.2_0.2_0_0_",
+    res <- readRDS(paste0("output/CC_f/500_100/baseline/", fhist,"/",
+                          stock, "/mp_CC_f_3_3_0.8_Inf_0_0.2_0.2_0_0_",
                           "0.6_0_0.75.rds"))
     ### collapse correction
     res_corrected <- collapse_correction(stk = res@stock, yrs = 101:150)
