@@ -3,6 +3,15 @@
 ### ------------------------------------------------------------------------ ###
 #stop('remember to uncomment each line if running for both one-way and random.')
 #args_local <- c("n_workers=0", "n_iter=500", "yrs_hist=100", "yrs_proj=50", "fhist='one-way'", "stock_id=27", "OM=TRUE")
+
+#it looks like i need to modify brps to change the recruitment model to 4 seasons.
+# brps[[stock]] tells you that dimensions of season is 1, when it is 4 after running seasonalise
+# 
+# Can't run rosana's as I need the .rdata
+# Can't run much of https://github.com/flr/doc/blob/9511edeec5f22333044fb1eaf55718b2804ec7d5/a_seasonal_operating_model.Rmd as it throws an error on the line fbar(eq)=refpts(eq)["msy","harvest"]%*%FLQuant....
+
+
+
 args_local <- c("n_workers=0", "n_iter=500", "yrs_hist=100", "yrs_proj=50", "fhist='random'", "stock_id=27", "OM=TRUE")
 
 args <- commandArgs(TRUE)
@@ -92,11 +101,143 @@ stocks <- read.csv("input/stocks.csv", stringsAsFactors = FALSE)
 ### BRPs from Fischer et al. (2020)
 brps <- readRDS("input/brps.rds")
 
-# Changes to seasonalise a stock, here we modify the original brps
-brps[["sar"]]@params = FLPar(NA, dimnames=list(params=c("a","b"), season=1:4, iter=1))
-#S-R takes places in q4
-brps[["sar"]]@params[1,4]=51.2
-brps[["sar"]]@params[2,4]=90.9
+# # Changes to seasonalise a stock, here we modify the original brps... params
+# brps[["sar"]]@params = FLPar(NA, dimnames=list(params=c("a","b"), season=1:4, iter=1))
+# #S-R takes places in q4
+# brps[["sar"]]@params[1,4]=51.2
+# brps[["sar"]]@params[2,4]=90.9
+# 
+# # refpts
+# original=brps[["sar"]]@refpts
+# brps[["sar"]]@refpts = FLPar(NA, dimnames=list(refpt=c("virgin","msy","crash","f0.1","fmax"),quant=c("harvest","yield","rec","ssb","biomass","revenue","cost","profit"), season=1:4, iter=1))
+# #S-R takes places in q4
+# for(x in 1:7){
+#   for(y in 1:5){
+#     brps[["sar"]]@refpts[y,x] = original[y,x]
+#   }
+# }
+# 
+# # change fbar to have 4 dimensions in season
+# replacement =FLQuant(dimnames=list(age="all",unit="unique",year=1:101,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=fbar(brps[["sar"]])
+# fbar(brps[["sar"]]) = replacement
+# 
+# # change fbar.obs to have 4 dimensions in season
+# replacement =FLQuant(dimnames=list(age="all",unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@fbar.obs
+# brps[["sar"]]@fbar.obs = replacement
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age="all",unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@landings.obs
+# brps[["sar"]]@landings.obs = replacement
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age="all",unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@discards.obs
+# brps[["sar"]]@discards.obs = replacement
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age="all",unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@rec.obs
+# brps[["sar"]]@rec.obs  = replacement
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age="all",unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@ssb.obs
+# brps[["sar"]]@ssb.obs  = replacement
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age="all",unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@stock.obs
+# brps[["sar"]]@stock.obs = replacement
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age="all",unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@profit.obs
+# brps[["sar"]]@profit.obs = replacement
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age=1:5,unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@landings.sel
+# brps[["sar"]]@landings.sel = replacement
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age=1:5,unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@discards.sel
+# brps[["sar"]]@discards.sel = replacement
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age=1:5,unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@bycatch.harvest
+# brps[["sar"]]@bycatch.harvest = replacement
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age=1:5,unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@stock.wt
+# brps[["sar"]]@stock.wt = replacement
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age=1:5,unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@landings.wt
+# brps[["sar"]]@landings.wt = replacement
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age=1:5,unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@discards.wt
+# brps[["sar"]]@discards.wt = replacement
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age=1:5,unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@bycatch.wt
+# brps[["sar"]]@bycatch.wt = replacement
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age=1:5,unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@m
+# brps[["sar"]]@m = replacement
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age=1:5,unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@mat
+# brps[["sar"]]@mat = replacement
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age=1:5,unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@harvest.spwn
+# brps[["sar"]]@harvest.spwn = replacement
+# 
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age=1:5,unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@m.spwn
+# brps[["sar"]]@m.spwn = replacement
+# 
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age=1:5,unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@availability
+# brps[["sar"]]@availability = replacement
+# 
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age=1:5,unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@price
+# brps[["sar"]]@price = replacement
+# 
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age="all",unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@vcost
+# brps[["sar"]]@vcost = replacement
+# 
+# 
+# # etc, etc...
+# replacement =FLQuant(dimnames=list(age="all",unit="unique",year=1,season=1:4,area="unique",iter=1))
+# replacement@.Data[,,,4,,]=brps[["sar"]]@fcost
+# brps[["sar"]]@fcost = replacement
+# 
+
 
 
 ### create FLStocks
@@ -109,18 +250,18 @@ if (exists("OM")) {
     stks_hist <- foreach(stock = stocks_subset, .errorhandling = "stop", 
                          .packages = c("FLCore", "FLash", "FLBRP")) %dopar% {
       stk <- as(brps[[stock]], "FLStock")
+      stk=FLCore::expand(stk,season=1:4)
       refpts <- refpts(brps[[stock]])
       stk <- qapply(stk, function(x) {#browser()
         dimnames(x)$year <- as.numeric(dimnames(x)$year) - 1; return(x)
       })
       stk <- stf(stk, yrs_hist + yrs_proj - dims(stk)$year + 1)
       stk <- propagate(stk, n_iter)
-      unpack <- seasonalise(stk)
-      stk = unpack[[1]]
-      srk_sr = unpack[[2]]
+      stk=seasonalise(stk)
       ### create stock recruitment model
-      #stk_sr <- FLSR(params = params(brps[[stock]]), model = model(brps[[stock]]))
-
+      stk_sr <- FLSR(params = params(brps[[stock]]), model = model(brps[[stock]]))
+      stk_sr=FLCore::expand(stk_sr,season=1:4)
+      
       ### create residuals for (historical) projection
       set.seed(0)
       residuals(stk_sr) <- rlnoise(dim(stk)[6], rec(stk) %=% 0, 
@@ -168,14 +309,14 @@ if (exists("OM")) {
                 rev(rate_down ^ seq(yrs_down) * f0_down))
         
         ### control object
-        ctrl <- fwdControl(data.frame(year = 2:100, quantity = "f", val = fs))
-        
+        ctrl <- fwdControl(data.frame(season=c(rep(seq(1:4),yrs_hist)), year = c(rep(2:100,each=4)), quantity = "f", val = fs))
+
       ### random F trajectories
       } else if (isTRUE(fhist == "random")) {
         
         ### control object template
-        ctrl <- fwdControl(data.frame(year = seq(yrs_hist), 
-                                      quantity = c("f"), val = NA))
+        ctrl <- fwdControl(data.frame(season=c(rep(seq(1:4),yrs_hist)), year = c(rep(1:yrs_hist,each=4)), quantity = c("f"), val = NA))
+
         ### add iterations
         ctrl@trgtArray <- f_array
         ### target * Fcrash
@@ -185,7 +326,7 @@ if (exists("OM")) {
       }
       
       ### project fishing history
-      stk_stf <- fwd(stk, ctrl, sr = stk_sr, sr.residuals = residuals(stk_sr),
+      stk_stf <- fwd(stk,  control = ctrl, sr = stk_sr, sr.residuals = residuals(stk_sr),
                      sr.residuals.mult = TRUE, maxF = 5) 
       #plot(stk_stf, iter = 1:50)
       #plot(ssb(stk_stf), iter = 1:50)

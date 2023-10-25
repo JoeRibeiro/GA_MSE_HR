@@ -38,7 +38,7 @@ seasonalise<-function(object, season=1:4){
   #fbar=as(FLQuants("fbar"=fbar(object)[,-1]),"fwdControl")
   #object=fwd(object,control=fbar,sr=sr,residuals=recs)
   
-  return(object,sr)}
+  object}
 
 wtInterp<-function(wt){
   
