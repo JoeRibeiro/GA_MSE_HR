@@ -29,7 +29,7 @@ for (i in seq_along(args)) eval(parse(text = args[[i]]))
 ### load packages
 ### use mse fork from shfischer/mse, branch mseDL2.0 
 ### remotes::install_github("shfischer/mse", ref = "mseDL2.0)
-req_pckgs <- c("FLCore", "FLash", "FLBRP", "mse", 
+req_pckgs <- c("FLCore", "FLasher", "FLBRP", "mse", 
                "tidyr", "dplyr", "foreach", "doParallel")
 for (i in req_pckgs) library(package = i, character.only = TRUE)
 
@@ -86,9 +86,9 @@ if (identical(fhist, "random")) {
     }))
   
   f_array <- array(dim = c(yrs_hist, 3, n_iter),
-                   dimnames = list(seq(yrs_hist), c("min","val","max"),
+                   dimnames = list(seq(yrs_hist), c("min","value","max"),
                                    iter = seq(n_iter)))
-  f_array[, "val", ] <- c(t(df))
+  f_array[, "value", ] <- c(t(df))
 }
 
 ### ------------------------------------------------------------------------ ###
@@ -248,7 +248,7 @@ if (exists("OM")) {
   if (isTRUE(OM)) {
     
     stks_hist <- foreach(stock = stocks_subset, .errorhandling = "stop", 
-                         .packages = c("FLCore", "FLash", "FLBRP")) %dopar% {
+                         .packages = c("FLCore", "FLasher", "FLBRP")) %dopar% {
       stk <- as(brps[[stock]], "FLStock")
       stk=FLCore::expand(stk,season=1:4)
       refpts <- refpts(brps[[stock]])
@@ -288,7 +288,7 @@ if (exists("OM")) {
         fs <- c(fs, rate ^ (1:25) * f0)
         
         ### control object
-        ctrl <- fwdControl(data.frame(year = 2:100, quantity = "f", val = fs))
+        ctrl <- fwdControl(data.frame(year = 2:100, quantity = "f", value = fs))
         
       ### roller-coaster
       } else if (isTRUE(fhist == "roller-coaster")) {
@@ -309,18 +309,18 @@ if (exists("OM")) {
                 rev(rate_down ^ seq(yrs_down) * f0_down))
         
         ### control object
-        ctrl <- fwdControl(data.frame(season=c(rep(seq(1:4),yrs_hist)), year = c(rep(2:100,each=4)), quantity = "f", val = fs))
+        ctrl <- fwdControl(data.frame(season=c(rep(seq(1:4),yrs_hist)), year = c(rep(2:100,each=4)), quantity = "f", value = fs))
 
       ### random F trajectories
       } else if (isTRUE(fhist == "random")) {
         
         ### control object template
-        ctrl <- fwdControl(data.frame(season=c(rep(seq(1:4),yrs_hist)), year = c(rep(1:yrs_hist,each=4)), quantity = c("f"), val = NA))
+        ctrl <- fwdControl(data.frame(season=c(rep(seq(1:4),yrs_hist)), year = c(rep(1:yrs_hist,each=4)), quantity = c("f"), value = NA))
 
         ### add iterations
-        ctrl@trgtArray <- f_array
+        ctrl@iters <- f_array
         ### target * Fcrash
-        ctrl@trgtArray[,"val",] <- ctrl@trgtArray[,"val",] * 
+        ctrl@iters[,"value",] <- ctrl@iters[,"value",] * 
           c(refpts["crash", "harvest"]) * 1
         
       }
