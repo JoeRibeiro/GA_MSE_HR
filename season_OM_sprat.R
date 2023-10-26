@@ -2,13 +2,67 @@
 #####################Adapted from annual model (N.Walker)###########
 #################### Author: Rosana Ourens
 
-required_pckgs <- c("FLasher", "FLAssess", "ggplotFL", "FLBRP", "data.table")
-source("C:/Users/ro03/Documents/sprat/MSE/season_MSE/season_functions.R")
 
-load("C:/Users/ro03/Documents/sprat/MSE/IBP_OMs/VB4_LW1_s0.65_sR0.78_FH1.RData")
+# This is how Simon defined OMs:
+# args_local <- c("n_workers=0", "n_iter=500", "yrs_hist=100", "yrs_proj=50", "fhist='random'", "stock_id=27", "OM=TRUE")
+# 
+# args <- commandArgs(TRUE)
+# if (exists(x = "args_local")) args <- append(args, args_local)
+# print("arguments passed on to this script:")
+# print(args)
+# 
+# ### evaluate arguments passed to R
+# for (i in seq_along(args)) eval(parse(text = args[[i]]))
+# 
+# ### load additional functions
+# source("funs.R")
+# source("season_functions.R")
+# 
+# ### ------------------------------------------------------------------------ ###
+# ### setup parallel environment ####
+# ### ------------------------------------------------------------------------ ###
+# cl <- FALSE
+# 
+# 
+# if (identical(fhist, "random")) {
+#   start <- rep(0, 1)
+#   middle <- runif(n = 1, min = 0, max = 1)
+#   end <- runif(n = 1, min = 0, max = 1)
+#   df <- t(sapply(seq(1), 
+#                  function(x) {
+#                    c(approx(x = c(1, yrs_hist/2), 
+#                             y = c(start[x], middle[x]), 
+#                             n = yrs_hist/2)$y,
+#                      approx(x = c(yrs_hist/2, yrs_hist + 1), 
+#                             y = c(middle[x], end[x]), 
+#                             n = (yrs_hist/2) + 1)$y[-1])
+#                  }))
+#   
+#   f_array <- array(dim = c(yrs_hist*4, 3, 1),
+#                    dimnames = list(seq(yrs_hist*4), c("min","val","max"),
+#                                    iter = 1))
+#   f_array[, "val", ] <- c(t(df))
+# }
+# 
+# ### get lhist for stocks
+# stocks <- read.csv("input/stocks.csv", stringsAsFactors = FALSE)
+# 
+# ### BRPs from Fischer et al. (2020)
+# brps <- readRDS("input/brps.rds")
+# stk <- as(brps[[stocks$stock[stock_id]]], "FLStock")
 
 
-sprat4=expand(stk,season=1:4)
+
+
+
+
+req_pckgs <- c("FLasher", "FLAssess", "ggplotFL", "FLBRP", "data.table")
+for (i in req_pckgs) library(package = i, character.only = TRUE)
+source("season_functions.R")
+
+load("C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/input/IBP_OMs/VB4_LW1_s0.65_sR0.78_FH1.RData")
+
+sprat4=FLCore::expand(stk,season=1:4)
 #Divide natural mortality equally across seasons
 m( sprat4)=m(sprat4)/dim(sprat4)[4]
 
@@ -56,11 +110,16 @@ sr.res@.Data[,,,4,,]<-sr.om.res@.Data[,c(2:26),,,,1]
   
 
 ## forecast for the first 25 years
+control <- fwdControl(as.data.frame(fbar(sprat4)[,c(2:25),,,,1]))
+control@trgtArray
 
-control=as(FLQuants(fbar=fbar(sprat4)[,c(2:25),,,,1]), 'fwdControl')
+f_array <- array(dim = c(yrs_hist*4, 3, 1),
+                 dimnames = list(seq(yrs_hist*4), c("min","val","max"),
+                                 iter = 1))
+f_array[, "val", ] <- c(t(df))
 
 #sprat4=fwd(sprat4[,c(1:25),,,,], control=control, sr=sprat_sr, deviances=sr.res)[,-1]
-sprat4=fwd(sprat4[,c(1:25),,,,1], control=control, sr=sprat_sr, deviances=sr.res)[,-1]
+sprat4=fwd(sprat4, control=control)
 
 
 ## compare with the annual model

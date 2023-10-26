@@ -1,7 +1,7 @@
 library(FLCore)
 library(ggplotFL)
 library(FLBRP)
-library(FLash)
+library(FLasher)
 #library(mydas)
 #library(FLife)
 

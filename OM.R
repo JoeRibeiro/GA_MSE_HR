@@ -10,7 +10,10 @@
 # Can't run rosana's as I need the .rdata
 # Can't run much of https://github.com/flr/doc/blob/9511edeec5f22333044fb1eaf55718b2804ec7d5/a_seasonal_operating_model.Rmd as it throws an error on the line fbar(eq)=refpts(eq)["msy","harvest"]%*%FLQuant....
 
+# This is the FLasher I installed, the newer ones will not install, the next commit stops installation succeeding
+#remotes::install_github("flr/FLasher@0358698f696b527a6d363edf383902ee2c8a0478")
 
+setwd('C:\\Users\\JR13\\Documents\\LOCAL_NOT_ONEDRIVE\\GA_MSE_HR')
 
 args_local <- c("n_workers=0", "n_iter=500", "yrs_hist=100", "yrs_proj=50", "fhist='random'", "stock_id=27", "OM=TRUE")
 
@@ -318,16 +321,19 @@ if (exists("OM")) {
         ctrl <- fwdControl(data.frame(season=c(rep(seq(1:4),yrs_hist)), year = c(rep(1:yrs_hist,each=4)), quantity = c("f"), val = NA))
 
         ### add iterations
-        ctrl@trgtArray <- f_array
+        # ctrl@iters <- f_array
         ### target * Fcrash
-        ctrl@trgtArray[,"val",] <- ctrl@trgtArray[,"val",] * 
-          c(refpts["crash", "harvest"]) * 1
         
+        ctrl@iters[,2,] <- 1
+        # 
+        # ctrl@iters[,"val",] <- ctrl@iters[,"val",] *
+        #   c(refpts["crash", "harvest"]) * 1
+        # 
       }
       
       ### project fishing history
-      stk_stf <- fwd(stk,  control = ctrl, sr = stk_sr, sr.residuals = residuals(stk_sr),
-                     sr.residuals.mult = TRUE, maxF = 5) 
+      stk_stf <- FLasher::fwd(stk,  control = ctrl, sr = stk_sr)#, sr.residuals = residuals(stk_sr),
+                     #sr.residuals.mult = TRUE, maxF = 5) 
       #plot(stk_stf, iter = 1:50)
       #plot(ssb(stk_stf), iter = 1:50)
       ### run a few times to get closer to target
@@ -374,3 +380,5 @@ if (exists("OM")) {
 gc()
 if (!isFALSE(cl)) clusterEvalQ(cl, {gc()})
 
+installed <- as.data.frame(installed.packages())
+saveRDS(installed,'C:\\Users\\JR13\\Documents\\LOCAL_NOT_ONEDRIVE\\GA_MSE_HR\\environmentNotRENV.rds')
