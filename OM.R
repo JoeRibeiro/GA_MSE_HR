@@ -80,12 +80,12 @@ if (identical(fhist, "random")) {
   end <- runif(n = 1, min = 0, max = 1)
   df <- t(sapply(seq(1), 
     function(x) {
-      c(approx(x = c(1, yrs_hist/2), 
+      c(approx(x = c(1, yrs_hist*4/2), 
                y = c(start[x], middle[x]), 
-               n = yrs_hist/2)$y,
-        approx(x = c(yrs_hist/2, yrs_hist + 1), 
+               n = yrs_hist*4/2)$y,
+        approx(x = c(yrs_hist*4/2, yrs_hist*4 + 1), 
                y = c(middle[x], end[x]), 
-               n = (yrs_hist/2) + 1)$y[-1])
+               n = (yrs_hist*4/2) + 1)$y[-1]) # added *4 here to correctly apply F across all the years / seasons otherwise it comes out in a weird saw-tooth (4 teeth across the 100 years)
     }))
   
   f_array <- array(dim = c(yrs_hist*4, 3, 1),
@@ -319,16 +319,13 @@ if (exists("OM")) {
         
         ### control object template
         ctrl <- fwdControl(data.frame(season=c(rep(seq(1:4),yrs_hist)), year = c(rep(1:yrs_hist,each=4)), quantity = c("f"), val = NA))
-
+        #ctrl <- fwdControl(data.frame(season=c(rep(1:4,each=100)), year = c(rep(seq(1:100),4)), quantity = c("f"), val = NA))
+        
         ### add iterations
-        # ctrl@iters <- f_array
+        ctrl@iters[,2,] <- f_array[,2,]
         ### target * Fcrash
         
-        ctrl@iters[,2,] <- 1
-        # 
-        # ctrl@iters[,"val",] <- ctrl@iters[,"val",] *
-        #   c(refpts["crash", "harvest"]) * 1
-        # 
+        ctrl@iters[,2,] <- ctrl@iters[,2,] *  c(refpts["crash", "harvest"]) * 1
       }
       
       ### project fishing history
