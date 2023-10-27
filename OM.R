@@ -75,23 +75,23 @@ set.seed(2)
 ### ------------------------------------------------------------------------ ###
 # fhist <- "random"#"one-way"
 if (identical(fhist, "random")) {
-  start <- rep(0, 1)
-  middle <- runif(n = 1, min = 0, max = 1)
-  end <- runif(n = 1, min = 0, max = 1)
-  df <- t(sapply(seq(1), 
-    function(x) {
-      c(approx(x = c(1, yrs_hist*4/2), 
-               y = c(start[x], middle[x]), 
-               n = yrs_hist*4/2)$y,
-        approx(x = c(yrs_hist*4/2, yrs_hist*4 + 1), 
-               y = c(middle[x], end[x]), 
-               n = (yrs_hist*4/2) + 1)$y[-1]) # added *4 here to correctly apply F across all the years / seasons otherwise it comes out in a weird saw-tooth (4 teeth across the 100 years)
-    }))
+  start <- rep(0, n_iter)
+  middle <- runif(n = n_iter, min = 0, max = 1)
+  end <- runif(n = n_iter, min = 0, max = 1)
+  df <- t(sapply(seq(n_iter), 
+                 function(x) {
+                   c(approx(x = c(1, yrs_hist*4/2), 
+                            y = c(start[x], middle[x]), 
+                            n = yrs_hist*4/2)$y,
+                     approx(x = c(yrs_hist*4/2, yrs_hist*4 + 1), 
+                            y = c(middle[x], end[x]), 
+                            n = (yrs_hist*4/2) + 1)$y[-1]) # added *4 here to correctly apply F across all the years / seasons otherwise it comes out in a weird saw-tooth (4 teeth across the 100 years)
+                 }))
   
-  f_array <- array(dim = c(yrs_hist*4, 3, 1),
-                   dimnames = list(seq(yrs_hist*4), c("min","val","max"),
-                                   iter = 1))
-  f_array[, "val", ] <- c(t(df))
+  f_array <- array(dim = c(yrs_hist*4, 3, n_iter),
+                   dimnames = list(seq(yrs_hist*4), c("min","value","max"),
+                                   iter = 1:n_iter))
+  f_array[, "value", ] <- c(t(df))
 }
 
 ### ------------------------------------------------------------------------ ###
@@ -322,10 +322,10 @@ if (exists("OM")) {
         #ctrl <- fwdControl(data.frame(season=c(rep(1:4,each=100)), year = c(rep(seq(1:100),4)), quantity = c("f"), val = NA))
         
         ### add iterations
-        ctrl@iters[,2,] <- f_array[,2,]
+        ctrl@iters <- f_array
         ### target * Fcrash
         
-        ctrl@iters[,2,] <- ctrl@iters[,2,] *  c(refpts["crash", "harvest"]) * 1
+        ctrl@iters <- ctrl@iters *  c(refpts["crash", "harvest"]) * 1
       }
       
       ### project fishing history
