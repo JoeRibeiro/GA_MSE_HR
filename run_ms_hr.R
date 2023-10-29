@@ -1,6 +1,6 @@
 
-#args_local <- c("stock_id=27", "scenario='baseline'", "fhist='random'")
-args_local <- c("stock_id=27", "scenario='baseline'", "fhist='one-way'")
+args_local <- c("stock_id=27", "scenario='baseline'", "fhist='random'")
+#args_local <- c("stock_id=27", "scenario='baseline'", "fhist='one-way'")
 
 ### ------------------------------------------------------------------------ ###
 ### run MSE ####
@@ -238,6 +238,7 @@ if (isFALSE(ga_search)) {
     ### -------------------------------------------------------------------- ###
     ### generate MP input ####
     ### -------------------------------------------------------------------- ###
+    #input_mp(stock = 27, fhist = "random", n_iter = 500, n_yrs = 50, MP = "CC_f", scenario = "baseline", idx_sel = "tsb", n_blocks = 1, sigmaB = 0.2, sigmaL = 0.2, sigmaB_rho = 0, sigmaL_rho = 0, sigmaR = 0.6, sigmaR_rho = 0, steepness = 0.75, multiplier = 1, idxB_lag = 1, interval = 3, pa_buffer = TRUE, pa_size = 0.8, pa_duration = 3, upper_constraint = Inf, lower_constraint = 0)
     input_i <- do.call(input_mp, as.list(par_i)) # error here
     
     ### -------------------------------------------------------------------- ###

@@ -379,3 +379,4 @@ if (!isFALSE(cl)) clusterEvalQ(cl, {gc()})
 
 installed <- as.data.frame(installed.packages())
 saveRDS(installed,'C:\\Users\\JR13\\Documents\\LOCAL_NOT_ONEDRIVE\\GA_MSE_HR\\environmentNotRENV.rds')
+write.csv(installed,file='C:\\Users\\JR13\\Documents\\LOCAL_NOT_ONEDRIVE\\GA_MSE_HR\\environmentNotRENV.csv')

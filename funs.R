@@ -653,7 +653,7 @@ h_Wiff <- function(l50, linf) {
 lmean <- function(stk, params) {
   
   ### calculate length from age with a & b
-  weights <- c(catch.wt(stk)[, 1,,,, 1])
+  weights <- c(catch.wt(stk)[, 1,,1,, 1]) # additional 1 for seasons
   lengths <- (weights / c(params["a"]))^(1 / c(params["b"]))
   catch.n <- catch.n(stk)
   dimnames(catch.n)$age <- lengths
@@ -661,7 +661,7 @@ lmean <- function(stk, params) {
   catch.n <- catch.n[lengths > c(params["Lc"]),]
   
   ### calculate mean length
-  lmean <- apply(X = catch.n, MARGIN = c(2, 6), FUN = function(x) {
+  lmean <- apply(X = catch.n, MARGIN = c(2, 4, 6), FUN = function(x) {
     ### calculate
     res <- weighted.mean(x = an(dimnames(x)$age), 
                          w = ifelse(is.na(x), 0, x), na.rm = TRUE)
