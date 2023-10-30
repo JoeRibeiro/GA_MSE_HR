@@ -36,7 +36,7 @@ for (i in seq_along(args)) eval(parse(text = args[[i]]))
   if (!exists("fhist")) fhist <- "one-way"
   
   ### MP parameters
-  if (!exists("MP")) MP <- "CC_f"
+  if (!exists("MP")) MP <- "const_catch"
   if (!exists("multiplier")) multiplier <- 1
   if (!exists("comp_r")) comp_r <- FALSE
   if (!exists("comp_f")) comp_f <- FALSE
