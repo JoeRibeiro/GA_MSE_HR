@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.2.2",
+    "Version": "4.2.3",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -11,14 +11,12 @@
   "Packages": {
     "FLBRP": {
       "Package": "FLBRP",
-      "Version": "2.5.9.9011",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "FLBRP",
-      "RemoteUsername": "FLR",
+      "Version": "2.5.9",
+      "Source": "Repository",
+      "Repository": "https://flr.r-universe.dev",
+      "RemoteUrl": "https://github.com/flr/FLBRP",
       "RemoteRef": "HEAD",
-      "RemoteSha": "2457addadcc154164f15e376ff440bb056167b26",
+      "RemoteSha": "5fa2b741d81f3d5c3e06b40cc221c98418d3a3c7",
       "Requirements": [
         "FLCore",
         "R",
@@ -26,18 +24,16 @@
         "ggplotFL",
         "methods"
       ],
-      "Hash": "fd6df0452d4e6a40d18886389bd2dfde"
+      "Hash": "428834b81e41adc9a686f097a221ae27"
     },
     "FLCore": {
       "Package": "FLCore",
-      "Version": "2.6.19.9085",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "FLCore",
-      "RemoteUsername": "FLR",
+      "Version": "2.6.19",
+      "Source": "Repository",
+      "Repository": "https://flr.r-universe.dev",
+      "RemoteUrl": "https://github.com/flr/FLCore",
       "RemoteRef": "HEAD",
-      "RemoteSha": "15bf3140a94d3a4332c8937e2c700db82c1b0e3d",
+      "RemoteSha": "031f7742bca4b128f80ee3cc386c21d9c00ddcf7",
       "Requirements": [
         "MASS",
         "Matrix",
@@ -52,46 +48,24 @@
         "stats4",
         "utils"
       ],
-      "Hash": "e473b5fda546b9e0037b56a6b4447d20"
+      "Hash": "e8e1443c52570ca10157df7531571f49"
     },
-    "FLFishery": {
-      "Package": "FLFishery",
-      "Version": "0.3.8.9008",
+    "FLash": {
+      "Package": "FLash",
+      "Version": "2.5.11",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteRepo": "FLFishery",
-      "RemoteUsername": "FLR",
+      "RemoteRepo": "FLash",
+      "RemoteUsername": "flr",
       "RemoteRef": "HEAD",
-      "RemoteSha": "56a1478018220bb94f022c34313b59961991de64",
+      "RemoteSha": "1008c040b760f68df5101f8aafba28d9e61bba5e",
       "Requirements": [
         "FLCore",
         "R",
-        "ggplot2",
-        "ggplotFL",
         "methods"
       ],
-      "Hash": "ac4677d14ee57108e290a71a1134d0f2"
-    },
-    "FLasher": {
-      "Package": "FLasher",
-      "Version": "0.7.0",
-      "Source": "Repository",
-      "Repository": "https://flr.r-universe.dev",
-      "RemoteUrl": "https://github.com/flr/FLasher",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "a7032ce597d9ee3b99fa6b135829377218ed3838",
-      "Requirements": [
-        "FLCore",
-        "FLFishery",
-        "R",
-        "Rcpp",
-        "ggplot2",
-        "ggplotFL",
-        "methods",
-        "rlang"
-      ],
-      "Hash": "02c643c3beab5f90c851bacb6b40fba3"
+      "Hash": "8a8a88fe1feb8045eec0266b1a085597"
     },
     "GA": {
       "Package": "GA",
@@ -137,12 +111,11 @@
     },
     "Matrix": {
       "Package": "Matrix",
-      "Version": "1.6-1.1",
+      "Version": "1.5-3",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "R",
-        "grDevices",
         "graphics",
         "grid",
         "lattice",
@@ -150,7 +123,7 @@
         "stats",
         "utils"
       ],
-      "Hash": "1a00d4828f33a9d690806e98bd17150c"
+      "Hash": "4006dffe49958d2dd591c17e61e60591"
     },
     "R6": {
       "Package": "R6",
@@ -175,18 +148,13 @@
     "Rcpp": {
       "Package": "Rcpp",
       "Version": "1.0.10",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "Rcpp",
-      "RemoteUsername": "RcppCore",
-      "RemoteRef": "1.0.10",
-      "RemoteSha": "c5b15728a4612fd9b2cba7fb31154fbfcaea18db",
+      "Source": "Repository",
+      "Repository": "CRAN",
       "Requirements": [
         "methods",
         "utils"
       ],
-      "Hash": "dcc8152100985df999f58798a124dbf6"
+      "Hash": "e749cae40fa9ef469b6050959517453c"
     },
     "RcppArmadillo": {
       "Package": "RcppArmadillo",
@@ -201,17 +169,6 @@
         "utils"
       ],
       "Hash": "44b6ca3a6d22b4c87cdd6140e6f15245"
-    },
-    "Rmpi": {
-      "Package": "Rmpi",
-      "Version": "0.7-1",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "parallel"
-      ],
-      "Hash": "186305c0f92fe2b96209c94cea746994"
     },
     "akima": {
       "Package": "akima",
@@ -349,46 +306,14 @@
     },
     "digest": {
       "Package": "digest",
-      "Version": "0.6.33",
+      "Version": "0.6.31",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "R",
         "utils"
       ],
-      "Hash": "b18a9cf3c003977b0cc49d5e76ebe48d"
-    },
-    "doFuture": {
-      "Package": "doFuture",
-      "Version": "1.0.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "foreach",
-        "future",
-        "future.apply",
-        "globals",
-        "iterators",
-        "parallel",
-        "utils"
-      ],
-      "Hash": "63814885cac13142d0af0bbb629d6521"
-    },
-    "doMPI": {
-      "Package": "doMPI",
-      "Version": "0.2.2",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "Rmpi",
-        "compiler",
-        "foreach",
-        "iterators",
-        "parallel",
-        "utils"
-      ],
-      "Hash": "ce53198b80f21bdf86d9d109094b10e3"
+      "Hash": "8b708f296afd9ae69f450f9640be8990"
     },
     "doParallel": {
       "Package": "doParallel",
@@ -403,6 +328,17 @@
         "utils"
       ],
       "Hash": "451e5edf411987991ab6a5410c45011f"
+    },
+    "doRNG": {
+      "Package": "doRNG",
+      "Version": "1.8.6",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "stats",
+        "utils",
+        "iterators"
+      ]
     },
     "dplyr": {
       "Package": "dplyr",
@@ -451,7 +387,7 @@
     },
     "fansi": {
       "Package": "fansi",
-      "Version": "1.0.5",
+      "Version": "1.0.4",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -459,7 +395,7 @@
         "grDevices",
         "utils"
       ],
-      "Hash": "3e8583a60163b4bc1a80016e63b9959e"
+      "Hash": "1d9e7ad3c8312a192dea7d3db0274fde"
     },
     "farver": {
       "Package": "farver",
@@ -511,35 +447,6 @@
       ],
       "Hash": "94af08e0aa9675a16fadbb3aaaa90d2a"
     },
-    "future": {
-      "Package": "future",
-      "Version": "1.33.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "digest",
-        "globals",
-        "listenv",
-        "parallel",
-        "parallelly",
-        "utils"
-      ],
-      "Hash": "8e92c7bc53e91b9bb1faf9a6ef0e8514"
-    },
-    "future.apply": {
-      "Package": "future.apply",
-      "Version": "1.11.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "future",
-        "globals",
-        "parallel",
-        "utils"
-      ],
-      "Hash": "ba4be138fe47eac3e16a6deaa4da106e"
-    },
     "generics": {
       "Package": "generics",
       "Version": "0.1.3",
@@ -553,7 +460,7 @@
     },
     "ggplot2": {
       "Package": "ggplot2",
-      "Version": "3.4.4",
+      "Version": "3.4.2",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -574,7 +481,7 @@
         "vctrs",
         "withr"
       ],
-      "Hash": "313d31eff2274ecf4c1d3581db7241f9"
+      "Hash": "3a147ee02e85a8941aad9909f1b43b7b"
     },
     "ggplotFL": {
       "Package": "ggplotFL",
@@ -597,33 +504,6 @@
         "stats"
       ],
       "Hash": "4451a580060ddc8c07eb2e801bb11c92"
-    },
-    "ggrepel": {
-      "Package": "ggrepel",
-      "Version": "0.9.4",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "Rcpp",
-        "ggplot2",
-        "grid",
-        "rlang",
-        "scales",
-        "withr"
-      ],
-      "Hash": "e9839af82cc43fda486a638b68b439b2"
-    },
-    "globals": {
-      "Package": "globals",
-      "Version": "0.16.2",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "codetools"
-      ],
-      "Hash": "baa9585ab4ce47a9f4618e671778cc6f"
     },
     "glue": {
       "Package": "glue",
@@ -652,7 +532,7 @@
     },
     "gtable": {
       "Package": "gtable",
-      "Version": "0.3.4",
+      "Version": "0.3.3",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -663,7 +543,7 @@
         "lifecycle",
         "rlang"
       ],
-      "Hash": "b29cf3031f49b04ab9c852c912547eef"
+      "Hash": "b44addadb528a0d227794121c00572a0"
     },
     "highr": {
       "Package": "highr",
@@ -753,14 +633,14 @@
     },
     "labeling": {
       "Package": "labeling",
-      "Version": "0.4.3",
+      "Version": "0.4.2",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "graphics",
         "stats"
       ],
-      "Hash": "b64ec208ac5bc1852b285f665d6368b3"
+      "Hash": "3d5108641f47470611a32d0bdf357a72"
     },
     "lattice": {
       "Package": "lattice",
@@ -789,16 +669,6 @@
         "rlang"
       ],
       "Hash": "001cecbeac1cff9301bdc3775ee46a86"
-    },
-    "listenv": {
-      "Package": "listenv",
-      "Version": "0.9.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R"
-      ],
-      "Hash": "4fbd3679ec8ee169ba28d4b1ea7d0e8f"
     },
     "magrittr": {
       "Package": "magrittr",
@@ -850,30 +720,25 @@
     },
     "mse": {
       "Package": "mse",
-      "Version": "2.2.3.9233",
+      "Version": "2.0.3",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteRepo": "mse",
-      "RemoteUsername": "FLR",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "8c6a4eb53f43165b67baee3b24e7910d872820d4",
+      "RemoteUsername": "shfischer",
+      "RemoteRef": "18ce8c8",
+      "RemoteSha": "18ce8c8d51362d5ced27b6c5978912f6da0ab5dc",
       "Requirements": [
         "FLBRP",
         "FLCore",
-        "FLFishery",
-        "FLasher",
+        "FLash",
         "R",
         "data.table",
-        "doFuture",
+        "foreach",
         "ggplotFL",
-        "ggrepel",
-        "methods",
-        "parallelly",
-        "patchwork",
-        "progressr"
+        "methods"
       ],
-      "Hash": "4be89e36b416fa219f46991ffbd5c853"
+      "Hash": "ec96e71d5aa52d6d6d8ac8c9b5c0af9f"
     },
     "munsell": {
       "Package": "munsell",
@@ -900,35 +765,21 @@
       ],
       "Hash": "0984ce8da8da9ead8643c5cbbb60f83e"
     },
-    "parallelly": {
-      "Package": "parallelly",
-      "Version": "1.36.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "parallel",
-        "tools",
-        "utils"
-      ],
-      "Hash": "bca377e1c87ec89ebed77bba00635b2e"
-    },
     "patchwork": {
       "Package": "patchwork",
-      "Version": "1.1.3",
+      "Version": "1.1.2",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
-        "cli",
         "ggplot2",
         "grDevices",
         "graphics",
         "grid",
         "gtable",
-        "rlang",
         "stats",
         "utils"
       ],
-      "Hash": "c5754106c02e8e019941100c81149431"
+      "Hash": "63b611e9d909a9ed057639d9c3b77152"
     },
     "pillar": {
       "Package": "pillar",
@@ -956,18 +807,6 @@
         "utils"
       ],
       "Hash": "01f28d4278f15c76cddbea05899c5d6f"
-    },
-    "progressr": {
-      "Package": "progressr",
-      "Version": "0.14.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "digest",
-        "utils"
-      ],
-      "Hash": "ac50c4ffa8f6a46580dd4d7813add3c4"
     },
     "purrr": {
       "Package": "purrr",
@@ -1188,17 +1027,17 @@
     },
     "utf8": {
       "Package": "utf8",
-      "Version": "1.2.4",
+      "Version": "1.2.3",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "R"
       ],
-      "Hash": "62b65c52671e6665f803ff02954446e9"
+      "Hash": "1fe17157424bb09c48a8b3b550c753bc"
     },
     "vctrs": {
       "Package": "vctrs",
-      "Version": "0.6.4",
+      "Version": "0.6.3",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -1208,7 +1047,7 @@
         "lifecycle",
         "rlang"
       ],
-      "Hash": "266c1ca411266ba8f365fcc726444b87"
+      "Hash": "d0ef2856b83dc33ea6e255caf6229ee2"
     },
     "viridisLite": {
       "Package": "viridisLite",
@@ -1222,7 +1061,7 @@
     },
     "withr": {
       "Package": "withr",
-      "Version": "2.5.2",
+      "Version": "2.5.0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -1231,7 +1070,7 @@
         "graphics",
         "stats"
       ],
-      "Hash": "4b25e70111b7d644322e9513f403a272"
+      "Hash": "c0e49a9760983e81e55cdd9be92e7182"
     },
     "xfun": {
       "Package": "xfun",
