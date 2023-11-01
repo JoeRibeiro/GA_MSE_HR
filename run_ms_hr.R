@@ -1,5 +1,5 @@
 
-args_local <- c("stock_id=27", "scenario='baseline'", "fhist='random'")
+args_local <- c("stock_id=12", "scenario='baseline'", "fhist='random'")
 #args_local <- c("stock_id=27", "scenario='baseline'", "fhist='one-way'")
 
 ### ------------------------------------------------------------------------ ###
@@ -257,7 +257,7 @@ if (isFALSE(ga_search)) {
 
     dir.create(path_out, recursive = TRUE)
     ### skip if run already exists
-    if (file.exists(paste0(path_out, "stats_", file_out, ".rds"))) return(NULL)
+    #if (file.exists(paste0(path_out, "stats_", file_out, ".rds"))) return(NULL)
     
     ### -------------------------------------------------------------------- ###
     ### run  ####
