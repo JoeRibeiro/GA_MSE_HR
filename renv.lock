@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.2.3",
+    "Version": "4.2.2",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -13,7 +13,7 @@
       "Package": "FLBRP",
       "Version": "2.5.9",
       "Source": "Repository",
-      "Repository": "https://flr.r-universe.dev",
+      "RemoteType": "repository",
       "RemoteUrl": "https://github.com/flr/FLBRP",
       "RemoteRef": "HEAD",
       "RemoteSha": "5fa2b741d81f3d5c3e06b40cc221c98418d3a3c7",
@@ -24,13 +24,14 @@
         "ggplotFL",
         "methods"
       ],
-      "Hash": "428834b81e41adc9a686f097a221ae27"
+      "Hash": "6b446c71b353b347b2a2609c5523973c"
     },
     "FLCore": {
       "Package": "FLCore",
       "Version": "2.6.19",
       "Source": "Repository",
-      "Repository": "https://flr.r-universe.dev",
+      "Repository": "flr",
+      "RemoteType": "repository",
       "RemoteUrl": "https://github.com/flr/FLCore",
       "RemoteRef": "HEAD",
       "RemoteSha": "031f7742bca4b128f80ee3cc386c21d9c00ddcf7",
@@ -48,7 +49,26 @@
         "stats4",
         "utils"
       ],
-      "Hash": "e8e1443c52570ca10157df7531571f49"
+      "Hash": "1a4b86e629766d24fff7f6587c361fee"
+    },
+    "FLFishery": {
+      "Package": "FLFishery",
+      "Version": "0.3.8.9008",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "FLFishery",
+      "RemoteUsername": "FLR",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "56a1478018220bb94f022c34313b59961991de64",
+      "Requirements": [
+        "FLCore",
+        "R",
+        "ggplot2",
+        "ggplotFL",
+        "methods"
+      ],
+      "Hash": "ac4677d14ee57108e290a71a1134d0f2"
     },
     "FLash": {
       "Package": "FLash",
@@ -66,6 +86,26 @@
         "methods"
       ],
       "Hash": "8a8a88fe1feb8045eec0266b1a085597"
+    },
+    "FLasher": {
+      "Package": "FLasher",
+      "Version": "0.7.0",
+      "Source": "Repository",
+      "Repository": "https://flr.r-universe.dev",
+      "RemoteUrl": "https://github.com/flr/FLasher",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "a7032ce597d9ee3b99fa6b135829377218ed3838",
+      "Requirements": [
+        "FLCore",
+        "FLFishery",
+        "R",
+        "Rcpp",
+        "ggplot2",
+        "ggplotFL",
+        "methods",
+        "rlang"
+      ],
+      "Hash": "02c643c3beab5f90c851bacb6b40fba3"
     },
     "GA": {
       "Package": "GA",
@@ -125,6 +165,45 @@
       ],
       "Hash": "4006dffe49958d2dd591c17e61e60591"
     },
+    "R.methodsS3": {
+      "Package": "R.methodsS3",
+      "Version": "1.8.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "utils"
+      ],
+      "Hash": "278c286fd6e9e75d0c2e8f731ea445c8"
+    },
+    "R.oo": {
+      "Package": "R.oo",
+      "Version": "1.25.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "R.methodsS3",
+        "methods",
+        "utils"
+      ],
+      "Hash": "a0900a114f4f0194cf4aa8cd4a700681"
+    },
+    "R.utils": {
+      "Package": "R.utils",
+      "Version": "2.12.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "R.methodsS3",
+        "R.oo",
+        "methods",
+        "tools",
+        "utils"
+      ],
+      "Hash": "325f01db13da12c04d8f6e7be36ff514"
+    },
     "R6": {
       "Package": "R6",
       "Version": "2.5.1",
@@ -169,6 +248,17 @@
         "utils"
       ],
       "Hash": "44b6ca3a6d22b4c87cdd6140e6f15245"
+    },
+    "Rmpi": {
+      "Package": "Rmpi",
+      "Version": "0.7-1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "parallel"
+      ],
+      "Hash": "186305c0f92fe2b96209c94cea746994"
     },
     "akima": {
       "Package": "akima",
@@ -315,6 +405,22 @@
       ],
       "Hash": "8b708f296afd9ae69f450f9640be8990"
     },
+    "doMPI": {
+      "Package": "doMPI",
+      "Version": "0.2.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "Rmpi",
+        "compiler",
+        "foreach",
+        "iterators",
+        "parallel",
+        "utils"
+      ],
+      "Hash": "ce53198b80f21bdf86d9d109094b10e3"
+    },
     "doParallel": {
       "Package": "doParallel",
       "Version": "1.0.17",
@@ -328,17 +434,6 @@
         "utils"
       ],
       "Hash": "451e5edf411987991ab6a5410c45011f"
-    },
-    "doRNG": {
-      "Package": "doRNG",
-      "Version": "1.8.6",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "stats",
-        "utils",
-        "iterators"
-      ]
     },
     "dplyr": {
       "Package": "dplyr",

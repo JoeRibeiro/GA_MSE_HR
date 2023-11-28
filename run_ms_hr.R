@@ -1,5 +1,5 @@
 
-args_local <- c("stock_id=12", "scenario='baseline'", "fhist='random'")
+args_local <- c("stock_id=27", "scenario='baseline'", "fhist='random'")
 #args_local <- c("stock_id=27", "scenario='baseline'", "fhist='one-way'")
 
 ### ------------------------------------------------------------------------ ###
@@ -265,7 +265,15 @@ if (isFALSE(ga_search)) {
     
     if (isTRUE(length(par_i$stock) > 1))
       stop("Individual MP runs only possible for one stock at a time!")
-    res <- do.call(mp, input_i[[1]])
+    # input0 = input_i
+    # input0[[1]]$args$fy <- NULL
+    # input0[[1]]$args$y0 <- NULL
+    # input0[[1]]$args$nsqy <- NULL
+    # input0[[1]]$args$nblocks <- NULL
+    # input0 = input_i[[1]]$args$seed <- NULL
+    # input0 = input_i[[1]]$args$seed_part <- NULL
+
+    res <- R.utils::doCall(mp, args=input_i[[1]])
 
     ### -------------------------------------------------------------------- ###
     ### save ####
