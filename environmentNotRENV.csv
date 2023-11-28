@@ -75,7 +75,7 @@ knitr (>= 1.39), lintr (>= 3.0.0), MASS, mockery (>= 0.4.3),
 pingr (>= 2.0.1), rhub (>= 1.1.1), rmarkdown (>= 2.14),
 rstudioapi (>= 0.13), spelling (>= 2.2)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "diffobj","diffobj","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.3.5",NA,"R (>= 3.1.0)","crayon (>= 1.3.2), tools, methods, utils, stats",NA,"knitr, rmarkdown",NA,"GPL-2 | GPL-3",NA,NA,NA,NA,"yes","4.2.3"
-"digest","digest","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.6.33",NA,"R (>= 3.3.0)","utils",NA,"tinytest, simplermarkdown",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.3"
+"digest","digest","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.6.31",NA,"R (>= 3.3.0)","utils",NA,"tinytest, simplermarkdown",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.3"
 "doFuture","doFuture","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.0.0",NA,"foreach (>= 1.5.0), future (>= 1.32.0)","future.apply, globals, iterators, parallel, utils",NA,"doRNG (>= 1.8.2), markdown, R.rsp",NA,"LGPL (>= 2.1)",NA,NA,NA,NA,"no","4.2.3"
 "doMPI","doMPI","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.2.2",NA,"R (>= 2.14.0), foreach(>= 1.3.0), iterators(>= 1.0.0), Rmpi(>=
 0.5-7)","parallel, compiler, utils",NA,"randomForest, itertools",NA,"GPL-2",NA,NA,NA,NA,"no","4.2.3"
@@ -95,15 +95,27 @@ rmarkdown, RMySQL, RPostgreSQL, RSQLite, stringi (>= 1.7.6),
 testthat (>= 3.1.5), tidyr (>= 1.3.0), withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "ellipsis","ellipsis","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.3.2",NA,"R (>= 3.2)","rlang (>= 0.3.0)",NA,"covr, testthat",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "evaluate","evaluate","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.21",NA,"R (>= 3.0.2)","methods",NA,"covr, ggplot2, lattice, rlang, testthat (>= 3.0.0), withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
-"fansi","fansi","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.0.5",NA,"R (>= 3.1.0)","grDevices, utils",NA,"unitizer, knitr, rmarkdown",NA,"GPL-2 | GPL-3",NA,NA,NA,NA,"yes","4.2.3"
+"fansi","fansi","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.0.4",NA,"R (>= 3.1.0)","grDevices, utils",NA,"unitizer, knitr, rmarkdown",NA,"GPL-2 | GPL-3",NA,NA,NA,NA,"yes","4.2.3"
 "farver","farver","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","2.1.1",NA,NA,NA,NA,"covr, testthat (>= 3.0.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "fastmap","fastmap","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.1.1",NA,NA,NA,NA,"testthat (>= 2.1.1)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
+"FLash","FLash","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","2.5.11",NA,"R(>= 3.4.0), FLCore(>= 2.6.5), methods",NA,NA,"knitr, rmarkdown",NA,"GPL-2",NA,NA,NA,NA,"yes","4.2.1"
 "FLasher","FLasher","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.7.0",NA,"R(>= 3.5.0), FLCore(> 2.6.5), FLFishery(>= 0.1), ggplotFL","methods, Rcpp (>= 0.12.0), rlang, ggplot2","Rcpp","testthat, knitr, rmarkdown, covr",NA,"EUPL",NA,NA,NA,NA,"yes","4.2.1"
 "FLAssess","FLAssess","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","2.6.3",NA,"methods, FLCore(>= 2.5.0)","lattice",NA,NA,NA,"GPL-2",NA,NA,NA,NA,"yes","4.2.1"
-"FLBRP","FLBRP","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","2.5.9.9011",NA,"R (>= 3.5.0), FLCore (>= 2.6.7), ggplotFL","methods, ggplot2",NA,"knitr, rmarkdown",NA,"GPL-3",NA,NA,NA,NA,"yes","4.2.2"
-"FLCore","FLCore","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","2.6.19.9085",NA,"R(>= 4.0), lattice, iterators","graphics, grid, methods, Matrix, MASS, stats, stats4, utils,
-ggplot2",NA,"knitr, testthat, rlang, hedgehog",NA,"GPL (>= 2)",NA,NA,NA,NA,"no","4.2.2"
-"FLFishery","FLFishery","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.3.8.9008",NA,"R(>= 4.0), methods, FLCore(>= 2.6.19.9032), ggplotFL","ggplot2",NA,"knitr, testthat, rmarkdown",NA,"EUPL",NA,NA,NA,NA,"no","4.2.2"
+"FLBRP","FLBRP","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","2.5.9",NA,"R (>= 3.5.0), FLCore (>= 2.6.7), ggplotFL","methods, ggplot2",NA,"knitr, rmarkdown",NA,"GPL-3",NA,NA,NA,NA,"Yes","4.2.2"
+"FLCore","FLCore","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","2.6.19",NA,"R(>= 4.0),
+lattice,
+iterators","graphics,
+grid,
+methods,
+Matrix,
+MASS,
+stats,
+stats4,
+utils,
+ggplot2",NA,"testthat,
+rlang,
+hedgehog",NA,"GPL (>= 2)",NA,NA,NA,NA,NA,"4.2.2"
+"FLFishery","FLFishery","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.3.8",NA,"R(>= 4.0), methods, FLCore(>= 2.6.16), ggplotFL","ggplot2",NA,"knitr, testthat, rmarkdown",NA,"EUPL",NA,NA,NA,NA,"no","4.2.1"
 "FLife","FLife","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","3.4.0",NA,"R(>= 3.6.0), FLCore (>= 2.6.13), ggplotFL","methods, plyr, FLBRP",NA,"FLasher, FLAssess, testthat, knitr, GGally, reshape, popbio,
 rmarkdown",NA,"GPL (>= 2)",NA,NA,NA,NA,"no","4.2.2"
 "fontawesome","fontawesome","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.5.1",NA,"R (>= 3.3.0)","rlang (>= 1.0.6), htmltools (>= 0.5.1.1)",NA,"covr, dplyr (>= 1.0.8), knitr (>= 1.31), testthat (>= 3.0.0),
@@ -130,12 +142,13 @@ intergraph (>= 2.0-2), labelled, maps (>= 3.1.0), mapproj,
 nnet, network (>= 1.17.1), scagnostics, sna (>= 2.3-2),
 survival, rmarkdown, roxygen2, testthat, crosstalk, knitr,
 spelling, emmeans",NA,"GPL (>= 2.0)",NA,NA,NA,NA,"no","4.2.3"
-"ggplot2","ggplot2","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","3.4.4",NA,"R (>= 3.3)","cli, glue, grDevices, grid, gtable (>= 0.1.1), isoband,
+"ggplot2","ggplot2","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","3.4.2",NA,"R (>= 3.3)","cli, glue, grDevices, grid, gtable (>= 0.1.1), isoband,
 lifecycle (> 1.0.1), MASS, mgcv, rlang (>= 1.1.0), scales (>=
 1.2.0), stats, tibble, vctrs (>= 0.5.0), withr (>= 2.5.0)",NA,"covr, dplyr, ggplot2movies, hexbin, Hmisc, knitr, lattice,
-mapproj, maps, multcomp, munsell, nlme, profvis, quantreg,
-ragg, RColorBrewer, rmarkdown, rpart, sf (>= 0.7-3), svglite
-(>= 1.2.0.9001), testthat (>= 3.1.2), vdiffr (>= 1.0.0), xml2","sp","MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
+mapproj, maps, maptools, multcomp, munsell, nlme, profvis,
+quantreg, ragg, RColorBrewer, rgeos, rmarkdown, rpart, sf (>=
+0.7-3), svglite (>= 1.2.0.9001), testthat (>= 3.1.2), vdiffr
+(>= 1.0.0), xml2","sp","MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "ggplotFL","ggplotFL","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","2.7.0",NA,"R(>= 4.0), ggplot2(>= 2.0.0), FLCore(>= 2.6.15)","methods, gridExtra, rlang, stats, scales, cowplot, data.table",NA,"knitr, rmarkdown, testthat",NA,"GPL-2",NA,NA,NA,NA,"no","4.2.1"
 "ggpubr","ggpubr","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.6.0",NA,"R (>= 3.1.0), ggplot2 (>= 3.4.0)","ggrepel (>= 0.9.2), grid, ggsci, stats, utils, tidyr (>=
 1.3.0), purrr, dplyr (>= 0.7.1), cowplot (>= 1.1.1), ggsignif,
@@ -157,7 +170,7 @@ testthat (>= 3.0.0), withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 microbenchmark, R.utils, rmarkdown, rprintf, RSQLite, stringr,
 testthat (>= 3.0.0), vctrs (>= 0.3.0), waldo (>= 0.3.0), withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "gridExtra","gridExtra","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","2.3",NA,NA,"gtable, grid, grDevices, graphics, utils",NA,"ggplot2, egg, lattice, knitr, testthat",NA,"GPL (>= 2)",NA,NA,NA,NA,"no","4.2.3"
-"gtable","gtable","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.3.4",NA,"R (>= 3.5)","cli, glue, grid, lifecycle, rlang (>= 1.1.0)",NA,"covr, ggplot2, knitr, profvis, rmarkdown, testthat (>= 3.0.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
+"gtable","gtable","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.3.3",NA,"R (>= 3.5)","cli, glue, grid, lifecycle, rlang (>= 1.1.0)",NA,"covr, ggplot2, knitr, profvis, rmarkdown, testthat (>= 3.0.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "highr","highr","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.10",NA,"R (>= 3.3.0)","xfun (>= 0.18)",NA,"knitr, markdown, testit",NA,"GPL",NA,NA,NA,NA,"no","4.2.3"
 "hms","hms","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.1.3",NA,NA,"lifecycle, methods, pkgconfig, rlang (>= 1.0.2), vctrs (>=
 0.3.8)",NA,"crayon, lubridate, pillar (>= 1.1.0), testthat (>= 3.0.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
@@ -186,8 +199,9 @@ gridSVG, htmlwidgets (>= 0.7), curl, jpeg, JuliaCall (>=
 styler (>= 1.2.0), targets (>= 0.6.0), testit, tibble,
 tikzDevice (>= 0.10), tinytex, webshot, rstudioapi, xml2 (>=
 1.2.0)",NA,"GPL",NA,NA,NA,NA,"no","4.2.3"
-"labeling","labeling","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.4.3",NA,NA,"stats, graphics",NA,NA,NA,"MIT + file LICENSE | Unlimited",NA,NA,NA,NA,"no","4.2.3"
+"labeling","labeling","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.4.2",NA,NA,"stats, graphics",NA,NA,NA,"MIT + file LICENSE | Unlimited",NA,NA,NA,NA,"no","4.2.0"
 "later","later","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.3.1",NA,NA,"Rcpp (>= 0.12.9), rlang","Rcpp","knitr, rmarkdown, testthat (>= 2.1.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
+"lattice","lattice","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.20-45","recommended","R (>= 3.0.0)","grid, grDevices, graphics, stats, utils",NA,"KernSmooth, MASS, latticeExtra","chron","GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.2"
 "lifecycle","lifecycle","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.0.3",NA,"R (>= 3.4)","cli (>= 3.4.0), glue, rlang (>= 1.0.6)",NA,"covr, crayon, knitr, lintr, rmarkdown, testthat (>= 3.0.1),
 tibble, tidyverse, tools, vctrs, withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "listenv","listenv","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.9.0",NA,"R (>= 3.1.2)",NA,NA,"R.utils, R.rsp, markdown",NA,"LGPL (>= 2.1)",NA,NA,NA,NA,"no","4.2.3"
@@ -198,7 +212,8 @@ numDeriv, car, dfoptim, mgcv, statmod, rr2, semEff, tibble,
 merDeriv",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.3"
 "magrittr","magrittr","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","2.0.3",NA,"R (>= 3.4.0)",NA,NA,"covr, knitr, rlang, rmarkdown, testthat",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "MASS","MASS","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","7.3-58.2","recommended","R (>= 3.3.0), grDevices, graphics, stats, utils","methods",NA,"lattice, nlme, nnet, survival",NA,"GPL-2 | GPL-3",NA,NA,NA,NA,"yes","4.2.2"
-"Matrix","Matrix","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.6-1.1","recommended","R (>= 3.5.0), methods","grDevices, graphics, grid, lattice, stats, utils",NA,"MASS, datasets, sfsmisc","SparseM, graph","GPL (>= 2) | file LICENCE",NA,NA,NA,NA,"yes","4.2.3"
+"Matrix","Matrix","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.5-3","recommended","R (>= 3.5.0), methods","graphics, grid, lattice, stats, utils",NA,"expm, MASS","MatrixModels, graph, SparseM, sfsmisc, igraph, maptools, sp,
+spdep","GPL (>= 2) | file LICENCE",NA,NA,NA,NA,"yes","4.2.2"
 "MatrixModels","MatrixModels","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.5-2",NA,"R (>= 3.6.0)","stats, methods, Matrix (>= 1.6-0)",NA,NA,NA,"GPL (>= 2)",NA,NA,NA,NA,"no","4.2.3"
 "memoise","memoise","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","2.0.1",NA,NA,"rlang (>= 0.4.10), cachem",NA,"digest, aws.s3, covr, googleAuthR, googleCloudStorageR, httr,
 testthat",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
@@ -206,8 +221,8 @@ testthat",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "mime","mime","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.12",NA,NA,"tools",NA,NA,NA,"GPL",NA,NA,NA,NA,"yes","4.2.0"
 "miniUI","miniUI","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.1.1.1",NA,NA,"shiny (>= 0.13), htmltools (>= 0.3), utils",NA,NA,NA,"GPL-3",NA,NA,NA,NA,"no","4.2.3"
 "minqa","minqa","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.2.6",NA,NA,"Rcpp (>= 0.9.10)","Rcpp",NA,NA,"GPL-2",NA,NA,NA,NA,"yes","4.2.3"
-"mse","mse","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","2.2.3.9233",NA,"R(>= 4.0), methods, FLCore(>= 2.6.18), ggplotFL(>= 2.6.10),
-FLFishery, FLasher(>= 0.6.7), doFuture, data.table, progressr","parallelly, ggrepel, patchwork, FLBRP(>= 2.5.8)",NA,"testthat, knitr, rmarkdown, FLa4a, doParallel",NA,"EUPL",NA,NA,NA,NA,"no","4.2.2"
+"mse","mse","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","2.2.3",NA,"R(>= 4.0), methods, FLCore(>= 2.6.18), ggplotFL(>= 2.6.10),
+data.table, FLasher(>= 0.6.7), FLBRP(>= 2.5.8)","foreach, parallelly, progressr, patchwork",NA,"testthat, knitr, rmarkdown, FLa4a, doParallel",NA,"EUPL",NA,NA,NA,NA,"no","4.2.1"
 "munsell","munsell","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.5.0",NA,NA,"colorspace, methods",NA,"ggplot2, testthat",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "nlme","nlme","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","3.1-162","recommended","R (>= 3.5.0)","graphics, stats, utils, lattice",NA,"Hmisc, MASS, SASmixed",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.3"
 "nloptr","nloptr","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","2.0.3",NA,NA,NA,"testthat","knitr, rmarkdown, xml2, testthat (>= 3.0.0), covr",NA,"LGPL (>= 3)",NA,NA,NA,NA,"yes","4.2.3"
@@ -215,8 +230,8 @@ FLFishery, FLasher(>= 0.6.7), doFuture, data.table, progressr","parallelly, ggre
 "openssl","openssl","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","2.1.1",NA,NA,"askpass",NA,"curl, testthat (>= 2.1.0), digest, knitr, rmarkdown,
 jsonlite, jose, sodium",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "parallelly","parallelly","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.36.0",NA,NA,"parallel, tools, utils",NA,NA,NA,"LGPL (>= 2.1)",NA,NA,NA,NA,"no","4.2.3"
-"patchwork","patchwork","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.1.3",NA,NA,"ggplot2 (>= 3.0.0), gtable, grid, stats, grDevices, utils,
-graphics, rlang, cli",NA,"knitr, rmarkdown, gridGraphics, gridExtra, ragg, testthat (>=
+"patchwork","patchwork","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.1.2",NA,NA,"ggplot2 (>= 3.0.0), gtable, grid, stats, grDevices, utils,
+graphics",NA,"knitr, rmarkdown, gridGraphics, gridExtra, ragg, testthat (>=
 2.1.0), vdiffr, covr, png",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "pbkrtest","pbkrtest","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.5.2",NA,"R (>= 4.1.0), lme4 (>= 1.1.31)","broom, dplyr, MASS, Matrix (>= 1.2.3), methods, numDeriv,
 parallel",NA,"knitr",NA,"GPL (>= 2)",NA,NA,NA,NA,"no","4.2.3"
@@ -263,6 +278,9 @@ rlang, testthat (>= 3.0.0), webfakes",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes",
 rlang (>= 0.4.10), vctrs (>= 0.5.0)","cli","covr, dplyr (>= 0.7.8), httr, knitr, lubridate, rmarkdown,
 testthat (>= 3.0.0), tibble, tidyselect",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "quantreg","quantreg","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","5.97",NA,"R (>= 3.5), stats, SparseM","methods, graphics, Matrix, MatrixModels, survival, MASS",NA,"interp, rgl, logspline, nor1mix, Formula, zoo, R.rsp, conquer",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.3"
+"R.methodsS3","R.methodsS3","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.8.2",NA,"R (>= 2.13.0)","utils",NA,"codetools",NA,"LGPL (>= 2.1)",NA,NA,NA,NA,"no","4.2.2"
+"R.oo","R.oo","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.25.0",NA,"R (>= 2.13.0), R.methodsS3 (>= 1.8.1)","methods, utils",NA,"tools",NA,"LGPL (>= 2.1)",NA,NA,NA,NA,"no","4.2.2"
+"R.utils","R.utils","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","2.12.2",NA,"R (>= 2.14.0), R.oo","methods, utils, tools, R.methodsS3",NA,"datasets, digest (>= 0.6.10)",NA,"LGPL (>= 2.1)",NA,NA,NA,NA,"no","4.2.3"
 "R6","R6","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","2.5.1",NA,"R (>= 3.0)",NA,NA,"testthat, pryr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "ragg","ragg","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.2.6",NA,NA,"systemfonts (>= 1.0.3), textshaping (>= 0.3.0)","systemfonts, textshaping","covr, graphics, grid, testthat (>= 3.0.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "rappdirs","rappdirs","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.3.3",NA,"R (>= 3.2)",NA,NA,"roxygen2, testthat (>= 3.0.0), covr, withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
@@ -271,7 +289,7 @@ digest, pkgbuild, prettyunits, R6, rprojroot, sessioninfo (>=
 1.1.1), utils, withr, xopen",NA,"covr, knitr, mockery, processx, ps, rmarkdown, svglite,
 testthat, webfakes",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "RColorBrewer","RColorBrewer","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.1-3",NA,"R (>= 2.0.0)",NA,NA,NA,NA,"Apache License 2.0",NA,NA,NA,NA,"no","4.2.0"
-"Rcpp","Rcpp","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.0.10",NA,NA,"methods, utils",NA,"tinytest, inline, rbenchmark, pkgKitten (>= 0.1.2)",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.2"
+"Rcpp","Rcpp","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.0.10",NA,NA,"methods, utils",NA,"tinytest, inline, rbenchmark, pkgKitten (>= 0.1.2)",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.3"
 "RcppArmadillo","RcppArmadillo","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.12.4.1.0",NA,"R (>= 3.3.0)","Rcpp (>= 0.11.0), stats, utils, methods","Rcpp","tinytest, Matrix (>= 1.3.0), pkgKitten, reticulate, slam",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.2"
 "RcppEigen","RcppEigen","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.3.3.9.3",NA,"R (>= 3.6.0)","Matrix (>= 1.1-0), Rcpp (>= 0.11.0), stats, utils","Rcpp","inline, tinytest, pkgKitten, microbenchmark",NA,"GPL (>= 2) | file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "rematch2","rematch2","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","2.1.2",NA,NA,"tibble",NA,"covr, testthat",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
@@ -359,9 +377,9 @@ testthat (>= 3.1.1), tibble (>= 2.1.3)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no"
 rlang (>= 1.1.0), rprojroot (>= 1.2), rstudioapi, stats, utils,
 whisker, withr (>= 2.3.0), yaml",NA,"covr, knitr, magick, pkgload, rmarkdown, roxygen2 (>= 7.1.2),
 spelling (>= 1.2), styler (>= 1.2.0), testthat (>= 3.1.8)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
-"utf8","utf8","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.2.4",NA,"R (>= 2.10)",NA,NA,"cli, covr, knitr, rlang, rmarkdown, testthat (>= 3.0.0),
+"utf8","utf8","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","1.2.3",NA,"R (>= 2.10)",NA,NA,"cli, covr, knitr, rlang, rmarkdown, testthat (>= 3.0.0),
 withr",NA,"Apache License (== 2.0) | file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
-"vctrs","vctrs","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.6.4",NA,"R (>= 3.5.0)","cli (>= 3.4.0), glue, lifecycle (>= 1.0.3), rlang (>= 1.1.0)",NA,"bit64, covr, crayon, dplyr (>= 0.8.5), generics, knitr,
+"vctrs","vctrs","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.6.3",NA,"R (>= 3.5.0)","cli (>= 3.4.0), glue, lifecycle (>= 1.0.3), rlang (>= 1.1.0)",NA,"bit64, covr, crayon, dplyr (>= 0.8.5), generics, knitr,
 pillar (>= 1.4.4), pkgdown (>= 2.0.1), rmarkdown, testthat (>=
 3.0.0), tibble (>= 3.1.3), waldo (>= 0.2.0), withr, xml2,
 zeallot",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
@@ -369,8 +387,8 @@ zeallot",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "waldo","waldo","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.5.1",NA,NA,"cli, diffobj (>= 0.3.4), fansi, glue, methods, rematch2, rlang
 (>= 1.0.0), tibble",NA,"covr, R6, testthat (>= 3.0.0), withr, xml2",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "whisker","whisker","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.4.1",NA,NA,NA,NA,"markdown",NA,"GPL-3",NA,NA,NA,NA,"no","4.2.3"
-"withr","withr","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","2.5.2",NA,"R (>= 3.2.0)","graphics, grDevices, stats",NA,"callr, covr, DBI, knitr, lattice, methods, rlang, rmarkdown
-(>= 2.12), RSQLite, testthat (>= 3.0.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.2"
+"withr","withr","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","2.5.0",NA,"R (>= 3.2.0)","graphics, grDevices, stats",NA,"callr, covr, DBI, knitr, lattice, methods, rlang, rmarkdown
+(>= 2.12), RSQLite, testthat (>= 3.0.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "xfun","xfun","C:/Users/JR13/Documents/LOCAL_NOT_ONEDRIVE/GA_MSE_HR/renv/library/R-4.2/x86_64-w64-mingw32","0.39",NA,NA,"stats, tools",NA,"testit, parallel, codetools, rstudioapi, tinytex (>= 0.30),
 mime, markdown (>= 1.5), knitr (>= 1.42), htmltools, remotes,
 pak, rhub, renv, curl, jsonlite, magick, yaml, rmarkdown",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
@@ -392,7 +410,7 @@ testthat (>= 2.1.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "grDevices","grDevices","C:/Users/JR13/AppData/Local/R/cache/R/renv/sandbox/R-4.2/x86_64-w64-mingw32/30182023","4.2.2","base",NA,NA,NA,"KernSmooth",NA,"Part of R 4.2.2",NA,NA,NA,NA,"yes","4.2.2"
 "grid","grid","C:/Users/JR13/AppData/Local/R/cache/R/renv/sandbox/R-4.2/x86_64-w64-mingw32/30182023","4.2.2","base",NA,"grDevices, utils",NA,NA,NA,"Part of R 4.2.2",NA,NA,NA,NA,"yes","4.2.2"
 "KernSmooth","KernSmooth","C:/Users/JR13/AppData/Local/R/cache/R/renv/sandbox/R-4.2/x86_64-w64-mingw32/30182023","2.23-20","recommended","R (>= 2.5.0), stats",NA,NA,"MASS, carData",NA,"Unlimited",NA,NA,NA,NA,"yes","4.2.2"
-"lattice","lattice","C:/Users/JR13/AppData/Local/R/cache/R/renv/sandbox/R-4.2/x86_64-w64-mingw32/30182023","0.20-45","recommended","R (>= 3.0.0)","grid, grDevices, graphics, stats, utils",NA,"KernSmooth, MASS, latticeExtra","chron","GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.2"
+"lattice.1","lattice","C:/Users/JR13/AppData/Local/R/cache/R/renv/sandbox/R-4.2/x86_64-w64-mingw32/30182023","0.20-45","recommended","R (>= 3.0.0)","grid, grDevices, graphics, stats, utils",NA,"KernSmooth, MASS, latticeExtra","chron","GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.2"
 "MASS.1","MASS","C:/Users/JR13/AppData/Local/R/cache/R/renv/sandbox/R-4.2/x86_64-w64-mingw32/30182023","7.3-58.1","recommended","R (>= 3.3.0), grDevices, graphics, stats, utils","methods",NA,"lattice, nlme, nnet, survival",NA,"GPL-2 | GPL-3",NA,NA,NA,NA,"yes","4.2.2"
 "Matrix.1","Matrix","C:/Users/JR13/AppData/Local/R/cache/R/renv/sandbox/R-4.2/x86_64-w64-mingw32/30182023","1.5-1","recommended","R (>= 3.5.0)","methods, graphics, grid, stats, utils, lattice",NA,"expm, MASS","MatrixModels, graph, SparseM, sfsmisc, igraph, maptools, sp,
 spdep","GPL (>= 2) | file LICENCE",NA,NA,NA,NA,"yes","4.2.2"

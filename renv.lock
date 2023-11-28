@@ -53,14 +53,12 @@
     },
     "FLFishery": {
       "Package": "FLFishery",
-      "Version": "0.3.8.9008",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "FLFishery",
-      "RemoteUsername": "FLR",
+      "Version": "0.3.8",
+      "Source": "Repository",
+      "Repository": "https://flr.r-universe.dev",
+      "RemoteUrl": "https://github.com/flr/FLFishery",
       "RemoteRef": "HEAD",
-      "RemoteSha": "56a1478018220bb94f022c34313b59961991de64",
+      "RemoteSha": "b944ce78845e5af10793bdeac077e73c0628988b",
       "Requirements": [
         "FLCore",
         "R",
@@ -68,24 +66,7 @@
         "ggplotFL",
         "methods"
       ],
-      "Hash": "ac4677d14ee57108e290a71a1134d0f2"
-    },
-    "FLash": {
-      "Package": "FLash",
-      "Version": "2.5.11",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "FLash",
-      "RemoteUsername": "flr",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "1008c040b760f68df5101f8aafba28d9e61bba5e",
-      "Requirements": [
-        "FLCore",
-        "R",
-        "methods"
-      ],
-      "Hash": "8a8a88fe1feb8045eec0266b1a085597"
+      "Hash": "a2e949b1cdaca34a78275879146fb084"
     },
     "FLasher": {
       "Package": "FLasher",
@@ -815,25 +796,26 @@
     },
     "mse": {
       "Package": "mse",
-      "Version": "2.0.3",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "mse",
-      "RemoteUsername": "shfischer",
-      "RemoteRef": "18ce8c8",
-      "RemoteSha": "18ce8c8d51362d5ced27b6c5978912f6da0ab5dc",
+      "Version": "2.2.3",
+      "Source": "Repository",
+      "Repository": "https://flr.r-universe.dev",
+      "RemoteUrl": "https://github.com/flr/mse",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "e5de9d2f0403dd6e678844e5d713db84838a82a9",
       "Requirements": [
         "FLBRP",
         "FLCore",
-        "FLash",
+        "FLasher",
         "R",
         "data.table",
         "foreach",
         "ggplotFL",
-        "methods"
+        "methods",
+        "parallelly",
+        "patchwork",
+        "progressr"
       ],
-      "Hash": "ec96e71d5aa52d6d6d8ac8c9b5c0af9f"
+      "Hash": "551e64b52a78c653d31a4888964df737"
     },
     "munsell": {
       "Package": "munsell",
@@ -859,6 +841,18 @@
         "utils"
       ],
       "Hash": "0984ce8da8da9ead8643c5cbbb60f83e"
+    },
+    "parallelly": {
+      "Package": "parallelly",
+      "Version": "1.36.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "parallel",
+        "tools",
+        "utils"
+      ],
+      "Hash": "bca377e1c87ec89ebed77bba00635b2e"
     },
     "patchwork": {
       "Package": "patchwork",
@@ -902,6 +896,18 @@
         "utils"
       ],
       "Hash": "01f28d4278f15c76cddbea05899c5d6f"
+    },
+    "progressr": {
+      "Package": "progressr",
+      "Version": "0.14.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "digest",
+        "utils"
+      ],
+      "Hash": "ac50c4ffa8f6a46580dd4d7813add3c4"
     },
     "purrr": {
       "Package": "purrr",
