@@ -1,7 +1,8 @@
+setwd('C:\\Users\\JR13\\Documents\\LOCAL_NOT_ONEDRIVE\\GA_MSE_HR')
 
 args_local <- c("stock_id=27", "scenario='baseline'", "fhist='random'")
 #args_local <- c("stock_id=27", "scenario='baseline'", "fhist='one-way'")
-
+ 
 ### ------------------------------------------------------------------------ ###
 ### run MSE ####
 ### ------------------------------------------------------------------------ ###
