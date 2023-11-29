@@ -35,7 +35,7 @@ for (i in seq_along(args)) eval(parse(text = args[[i]]))
 # remotes::install_github("flr/mse", ref = "2.2.1")
 req_pckgs <- c("FLCore", "FLasher", "FLBRP", "mse", 
                "tidyr", "dplyr", "foreach", "doParallel")
-for (i in req_pckgs) library(package = i, character.only = TRUE)
+for (i in req_pckgs) library(package = i, character.only = TRUE) 
 
 ### load additional functions
 source("funs.R")
