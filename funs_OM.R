@@ -115,11 +115,15 @@ input_mp <- function(stocks,
     }
     
     ### observation (error) model
-    idx <- FLQuants(
-      sel = stk@mat %=% NA_real_,
-      idxB = ssb(stk) %=% NA_real_,
-      idxL = ssb(stk) %=% NA_real_,
-      PA_status = ssb(stk) %=% NA_integer_)
+    idx <- FLIndices(
+      
+      sel = FLIndex(stk@mat %=% NA_real_),
+      
+      idxB = FLIndex(ssb(stk) %=% NA_real_),
+      
+      idxL = FLIndex(ssb(stk) %=% NA_real_),
+      
+      PA_status = FLIndex(ssb(stk) %=% NA_integer_))
     if (identical(MP, "hr")) {
       oem <- FLoem(method = obs_generic,
                    observations = list(stk = stk, idx = idx), 

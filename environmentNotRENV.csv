@@ -14,7 +14,7 @@ microbenchmark, bit64 (>= 4.0.0), ff (>= 4.0.0)",NA,"GPL-2 | GPL-3",NA,NA,NA,NA,
 "bit64","bit64","C:/Users/JR13/AppData/Local/R/win-library/4.2","4.0.5",NA,"R (>= 3.0.1), bit (>= 4.0.0), utils, methods, stats",NA,NA,NA,NA,"GPL-2 | GPL-3",NA,NA,NA,NA,"yes","4.2.3"
 "blob","blob","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.2.4",NA,NA,"methods, rlang, vctrs (>= 0.2.1)",NA,"covr, crayon, pillar (>= 1.2.1), testthat",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "bmp","bmp","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.3",NA,NA,NA,NA,"pixmap, testthat",NA,"GPL (>= 2)",NA,NA,NA,NA,"no","4.2.3"
-"bookdown","bookdown","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.36",NA,"R (>= 3.5.0)","htmltools (>= 0.3.6), knitr (>= 1.38), rmarkdown (>= 2.14),
+"bookdown","bookdown","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.37",NA,"R (>= 3.5.0)","htmltools (>= 0.3.6), knitr (>= 1.38), rmarkdown (>= 2.14),
 jquerylib, xfun (>= 0.39), tinytex (>= 0.12), yaml (>= 2.1.19)",NA,"bslib (>= 0.2.4), downlit (>= 0.4.0), htmlwidgets, jsonlite,
 rstudioapi, miniUI, rsconnect (>= 0.4.3), servr (>= 0.13),
 shiny, tibble, testit (>= 0.9), tufte, xml2, webshot, testthat
@@ -35,10 +35,10 @@ nnet, orcutt (>= 2.2), ordinal, plm, poLCA, psych, quantreg,
 rmarkdown, robust, robustbase, rsample, sandwich, sp, spdep (>=
 1.1), spatialreg, speedglm, spelling, survey, survival,
 systemfit, testthat (>= 2.1.0), tseries, vars, zoo",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
-"bslib","bslib","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.5.1",NA,"R (>= 2.10)","base64enc, cachem, grDevices, htmltools (>= 0.5.4), jquerylib
-(>= 0.1.3), jsonlite, memoise (>= 2.0.1), mime, rlang, sass (>=
-0.4.0)",NA,"bsicons, curl, fontawesome, ggplot2, knitr, magrittr,
-rappdirs, rmarkdown (>= 2.7), shiny (>= 1.6.0), testthat,
+"bslib","bslib","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.6.1",NA,"R (>= 2.10)","base64enc, cachem, grDevices, htmltools (>= 0.5.7), jquerylib
+(>= 0.1.3), jsonlite, lifecycle, memoise (>= 2.0.1), mime,
+rlang, sass (>= 0.4.0)",NA,"bsicons, curl, fontawesome, ggplot2, knitr, magrittr,
+rappdirs, rmarkdown (>= 2.7), shiny (>= 1.8.0), testthat,
 thematic, withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "ca","ca","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.71.1",NA,"R (>= 3.0.0)",NA,NA,"rgl (>= 0.64-10), vcd",NA,"GPL",NA,NA,NA,NA,"no","4.2.3"
 "cachem","cachem","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.0.8",NA,NA,"rlang, fastmap (>= 1.1.1)",NA,"testthat",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
@@ -71,13 +71,13 @@ prettydoc, testthat",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 scales",NA,"Cairo, covr, dplyr, forcats, gridGraphics (>= 0.4-0), knitr,
 lattice, magick, maps, PASWR, patchwork, rmarkdown, ragg,
 testthat (>= 1.0.0), tidyr, vdiffr (>= 0.3.0), VennDiagram",NA,"GPL-2",NA,NA,NA,NA,"no","4.2.3"
-"cpp11","cpp11","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.4.6",NA,"R (>= 3.5.0)",NA,NA,"bench, brio, callr, cli, covr, decor, desc, ggplot2, glue,
+"cpp11","cpp11","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.4.7",NA,"R (>= 3.5.0)",NA,NA,"bench, brio, callr, cli, covr, decor, desc, ggplot2, glue,
 knitr, lobstr, mockery, progress, rmarkdown, scales, Rcpp,
-testthat, tibble, utils, vctrs, withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
+testthat (>= 3.2.0), tibble, utils, vctrs, withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "cptcity","cptcity","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.0.6",NA,"R (>= 2.10)","grDevices",NA,"covr, testthat",NA,"GPL-3",NA,NA,NA,NA,"no","4.2.3"
 "crayon","crayon","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.5.2",NA,NA,"grDevices, methods, utils",NA,"mockery, rstudioapi, testthat, withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "credentials","credentials","C:/Users/JR13/AppData/Local/R/win-library/4.2","2.0.1",NA,NA,"openssl (>= 1.3), sys (>= 2.1), curl, jsonlite, askpass",NA,"testthat, knitr, rmarkdown",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
-"crosstalk","crosstalk","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.2.0",NA,NA,"htmltools (>= 0.3.6), jsonlite, lazyeval, R6",NA,"shiny, ggplot2, testthat (>= 2.1.0), sass, bslib",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
+"crosstalk","crosstalk","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.2.1",NA,NA,"htmltools (>= 0.3.6), jsonlite, lazyeval, R6",NA,"shiny, ggplot2, testthat (>= 2.1.0), sass, bslib",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "curl","curl","C:/Users/JR13/AppData/Local/R/win-library/4.2","5.1.0",NA,"R (>= 3.0.0)",NA,NA,"spelling, testthat (>= 1.0.0), knitr, jsonlite, rmarkdown,
 magrittr, httpuv (>= 1.4.4), webutils",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "data.table","data.table","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.14.8",NA,"R (>= 3.1.0)","methods",NA,"bit64 (>= 4.0.0), bit (>= 4.0.4), curl, R.utils, xts,
@@ -96,7 +96,7 @@ tidyselect (>= 1.2.0), utils, vctrs (>= 0.6.3), withr (>=
 2.5.0)",NA,"bit64, covr, knitr, Lahman, nycflights13, odbc, RMariaDB (>=
 1.2.2), rmarkdown, RPostgres (>= 1.4.5), RPostgreSQL, RSQLite
 (>= 2.3.1), testthat (>= 3.1.10)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
-"deldir","deldir","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.0-9",NA,"R (>= 3.5.0)","graphics, grDevices",NA,"polyclip",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.3"
+"deldir","deldir","C:/Users/JR13/AppData/Local/R/win-library/4.2","2.0-2",NA,"R (>= 3.5.0)","graphics, grDevices",NA,"polyclip",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.3"
 "desc","desc","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.4.2",NA,"R (>= 3.4)","cli, R6, rprojroot, utils",NA,"callr, covr, gh, spelling, testthat, whoami, withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "devtools","devtools","C:/Users/JR13/AppData/Local/R/win-library/4.2","2.4.5",NA,"R (>= 3.0.2), usethis (>= 2.1.6)","cli (>= 3.3.0), desc (>= 1.4.1), ellipsis (>= 0.3.2), fs (>=
 1.5.2), lifecycle (>= 1.0.1), memoise (>= 2.0.1), miniUI (>=
@@ -121,7 +121,7 @@ mgcViz (>= 0.1.9), spaMM (>= 3.2.0), GLMMadaptive, glmmTMB (>=
 parallel, utils",NA,NA,"caret, mlbench, rpart, RUnit","compiler","GPL-2",NA,NA,NA,NA,"no","4.2.3"
 "doRNG","doRNG","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.8.6",NA,"R (>= 3.0.0), foreach, rngtools (>= 1.5)","stats, utils, iterators",NA,"doParallel, doMPI, doRedis, rbenchmark, devtools, knitr,
 rbibutils (>= 1.3), testthat, pkgmaker (>= 0.32.7), covr",NA,"GPL (>= 2)",NA,NA,NA,NA,"no","4.2.3"
-"dotCall64","dotCall64","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.1-0",NA,"R (>= 3.1)",NA,NA,"microbenchmark, RhpcBLASctl, RColorBrewer, roxygen2, spam,
+"dotCall64","dotCall64","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.1-1",NA,"R (>= 3.1)",NA,NA,"microbenchmark, RhpcBLASctl, RColorBrewer, roxygen2, spam,
 testthat,",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.3"
 "downlit","downlit","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.4.3",NA,"R (>= 3.4.0)","brio, desc, digest, evaluate, fansi, memoise, rlang, vctrs,
 withr, yaml",NA,"covr, htmltools, jsonlite, MASS, MassSpecWavelet, pkgload,
@@ -147,7 +147,7 @@ ordinal, car, knitr, betareg, alr4, robustlmm",NA,"GPL (>= 2)",NA,NA,NA,NA,"no",
 "ellipsis","ellipsis","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.3.2",NA,"R (>= 3.2)","rlang (>= 0.3.0)",NA,"covr, testthat",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "estimability","estimability","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.4.1",NA,"stats",NA,NA,NA,NA,"GPL (>= 3)",NA,NA,NA,NA,"no","4.2.1"
 "evaluate","evaluate","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.23",NA,"R (>= 3.0.2)","methods",NA,"covr, ggplot2, lattice, rlang, testthat (>= 3.0.0), withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
-"fansi","fansi","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.0.5",NA,"R (>= 3.1.0)","grDevices, utils",NA,"unitizer, knitr, rmarkdown",NA,"GPL-2 | GPL-3",NA,NA,NA,NA,"yes","4.2.3"
+"fansi","fansi","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.0.6",NA,"R (>= 3.1.0)","grDevices, utils",NA,"unitizer, knitr, rmarkdown",NA,"GPL-2 | GPL-3",NA,NA,NA,NA,"yes","4.2.2"
 "farver","farver","C:/Users/JR13/AppData/Local/R/win-library/4.2","2.1.1",NA,NA,NA,NA,"covr, testthat (>= 3.0.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "fastcluster","fastcluster","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.2.3",NA,"R (>= 3.0.0)",NA,NA,NA,"stats, flashClust","FreeBSD | GPL-2 | file LICENSE",NA,NA,NA,NA,"yes","4.2.0"
 "fastmap","fastmap","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.1.1",NA,NA,NA,NA,"testthat (>= 2.1.1)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
@@ -197,12 +197,12 @@ sfheaders (>= 0.2.2)","covr, jsonify, knitr, rmarkdown, tinytest",NA,"MIT + file
 "geometries","geometries","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.2.3",NA,NA,"Rcpp (>= 1.0.10)","Rcpp","covr, knitr, rmarkdown, tinytest",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "gert","gert","C:/Users/JR13/AppData/Local/R/win-library/4.2","2.0.0",NA,NA,"askpass, credentials (>= 1.2.1), openssl (>= 2.0.3),
 rstudioapi (>= 0.11), sys, zip (>= 2.1.0)",NA,"spelling, knitr, rmarkdown, testthat",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
-"ggplot2","ggplot2","C:/Users/JR13/AppData/Local/R/win-library/4.2","3.4.4",NA,"R (>= 3.3)","cli, glue, grDevices, grid, gtable (>= 0.1.1), isoband,
+"ggplot2","ggplot2","C:/Users/JR13/AppData/Local/R/win-library/4.2","3.4.4.9000",NA,"R (>= 3.5)","cli, glue, grDevices, grid, gtable (>= 0.1.1), isoband,
 lifecycle (> 1.0.1), MASS, mgcv, rlang (>= 1.1.0), scales (>=
-1.2.0), stats, tibble, vctrs (>= 0.5.0), withr (>= 2.5.0)",NA,"covr, dplyr, ggplot2movies, hexbin, Hmisc, knitr, lattice,
-mapproj, maps, multcomp, munsell, nlme, profvis, quantreg,
-ragg, RColorBrewer, rmarkdown, rpart, sf (>= 0.7-3), svglite
-(>= 1.2.0.9001), testthat (>= 3.1.2), vdiffr (>= 1.0.0), xml2","sp","MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
+1.3.0), stats, tibble, vctrs (>= 0.5.0), withr (>= 2.5.0)",NA,"covr, dplyr, ggplot2movies, hexbin, Hmisc, knitr, mapproj,
+maps, multcomp, munsell, nlme, profvis, quantreg, ragg (>=
+1.2.6), RColorBrewer, rmarkdown, rpart, sf (>= 0.7-3), svglite
+(>= 2.1.2), testthat (>= 3.1.2), vdiffr (>= 1.0.6), xml2","sp","MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.2"
 "ggplotFL","ggplotFL","C:/Users/JR13/AppData/Local/R/win-library/4.2","2.7.0",NA,"R(>= 4.0), ggplot2(>= 2.0.0), FLCore(>= 2.6.15)","methods, gridExtra, rlang, stats, scales, cowplot, data.table",NA,"knitr, rmarkdown, testthat",NA,"GPL-2",NA,NA,NA,NA,"no","4.2.1"
 "ggrepel","ggrepel","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.9.4",NA,"R (>= 3.0.0), ggplot2 (>= 2.2.0)","grid, Rcpp, rlang (>= 0.3.0), scales (>= 0.5.0), withr (>=
 2.5.0)","Rcpp","knitr, rmarkdown, testthat, svglite, vdiffr, gridExtra,
@@ -230,8 +230,8 @@ utils, vctrs (>= 0.2.3), withr",NA,"readr, rmarkdown, spelling, testthat (>= 3.1
 "gstat","gstat","C:/Users/JR13/AppData/Local/R/win-library/4.2","2.1-1",NA,"R (>= 2.10)","utils, stats, graphics, methods, lattice, sp (>= 0.9-72), zoo,
 sf (>= 0.7-2), sftime, spacetime (>= 1.2-8), stars, FNN",NA,"fields, maps, mapdata, xts, raster, future, future.apply",NA,"GPL (>= 2.0)",NA,NA,NA,NA,"yes","4.2.3"
 "gtable","gtable","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.3.4",NA,"R (>= 3.5)","cli, glue, grid, lifecycle, rlang (>= 1.1.0)",NA,"covr, ggplot2, knitr, profvis, rmarkdown, testthat (>= 3.0.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
-"gtools","gtools","C:/Users/JR13/AppData/Local/R/win-library/4.2","3.9.4",NA,"methods, stats, utils",NA,NA,"car, gplots, knitr, rstudioapi, SGP, taxize",NA,"GPL-2",NA,NA,NA,NA,"yes","4.2.3"
-"haven","haven","C:/Users/JR13/AppData/Local/R/win-library/4.2","2.5.3",NA,"R (>= 3.6)","cli (>= 3.0.0), forcats (>= 0.2.0), hms, lifecycle, methods,
+"gtools","gtools","C:/Users/JR13/AppData/Local/R/win-library/4.2","3.9.5",NA,"methods, stats, utils",NA,NA,"car, gplots, knitr, rstudioapi, SGP, taxize",NA,"GPL-2",NA,NA,NA,NA,"yes","4.2.3"
+"haven","haven","C:/Users/JR13/AppData/Local/R/win-library/4.2","2.5.4",NA,"R (>= 3.6)","cli (>= 3.0.0), forcats (>= 0.2.0), hms, lifecycle, methods,
 readr (>= 0.1.0), rlang (>= 0.4.0), tibble, tidyselect, vctrs
 (>= 0.3.0)","cpp11","covr, crayon, fs, knitr, pillar (>= 1.4.0), rmarkdown,
 testthat (>= 3.0.0), utf8",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
@@ -240,15 +240,15 @@ testthat (>= 3.0.0), utf8",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 0.3.8)",NA,"crayon, lubridate, pillar (>= 1.1.0), testthat (>= 3.0.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "htmltools","htmltools","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.5.7",NA,"R (>= 2.14.1)","base64enc, digest, ellipsis, fastmap (>= 1.1.0), grDevices,
 rlang (>= 1.0.0), utils",NA,"Cairo, markdown, ragg, shiny, testthat, withr","knitr","GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.3"
-"htmlwidgets","htmlwidgets","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.6.2",NA,NA,"grDevices, htmltools (>= 0.5.4), jsonlite (>= 0.9.16), yaml,
-knitr (>= 1.8), rmarkdown",NA,"testthat","shiny (>= 1.1)","MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
+"htmlwidgets","htmlwidgets","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.6.4",NA,NA,"grDevices, htmltools (>= 0.5.7), jsonlite (>= 0.9.16), knitr
+(>= 1.8), rmarkdown, yaml",NA,"testthat","shiny (>= 1.1)","MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.2"
 "httpuv","httpuv","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.6.12",NA,"R (>= 2.15.1)","later (>= 0.8.0), promises, R6, Rcpp (>= 1.0.7), utils","later, Rcpp","callr, curl, testthat, websocket",NA,"GPL (>= 2) | file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "httr","httr","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.4.7",NA,"R (>= 3.5)","curl (>= 5.0.2), jsonlite, mime, openssl (>= 0.8), R6",NA,"covr, httpuv, jpeg, knitr, png, readr, rmarkdown, testthat
 (>= 0.8.0), xml2",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
-"httr2","httr2","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.2.3",NA,"R (>= 3.4)","cli (>= 3.0.0), curl, glue, magrittr, openssl, R6, rappdirs,
-rlang (>= 1.0.0), withr",NA,"askpass, bench, clipr, covr, docopt, httpuv, jose, jsonlite,
-knitr, purrr, rmarkdown, testthat (>= 3.0.0), tibble, webfakes,
-xml2",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
+"httr2","httr2","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.0.0",NA,"R (>= 3.6)","cli (>= 3.0.0), curl (>= 5.1.0), glue, lifecycle, magrittr,
+openssl, R6, rappdirs, rlang (>= 1.1.0), vctrs (>= 0.6.3),
+withr",NA,"askpass, bench, clipr, covr, docopt, httpuv, jose, jsonlite,
+knitr, rmarkdown, testthat (>= 3.1.8), tibble, webfakes, xml2",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "icesDatras","icesDatras","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.4.1",NA,NA,"utils",NA,"icesVocab",NA,"GPL (>= 2)",NA,NA,NA,NA,"no","4.2.3"
 "icesVocab","icesVocab","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.2.0",NA,NA,"utils, xml2",NA,"testthat",NA,"GPL-3",NA,NA,NA,NA,"no","4.2.3"
 "ids","ids","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.0.1",NA,NA,"openssl, uuid",NA,"knitr, rcorpora, rmarkdown, testthat",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
@@ -269,23 +269,24 @@ splancs, terra, tidyterra, testthat, tools, INLAspacetime",NA,"GPL (>= 2) + file
 "INLAspacetime","INLAspacetime","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.1.7",NA,"R (>= 3.6), Matrix, sp","graphics, grDevices, methods, stats, utils, sf, fmesher",NA,"INLA (>= 23.03.26), inlabru (>= 2.8.0), knitr, ggplot2,
 rmarkdown, parallel, data.table, rnaturalearth, splancs",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.3"
 "inline","inline","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.3.19",NA,NA,"methods",NA,"Rcpp (>= 0.11.0), tinytest",NA,"LGPL",NA,NA,NA,NA,"no","4.2.3"
-"insight","insight","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.19.6",NA,"R (>= 3.6)","methods, stats, utils",NA,"AER, afex, aod, BayesFactor, bayestestR, bbmle, bdsmatrix,
+"insight","insight","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.19.7",NA,"R (>= 3.6)","methods, stats, utils",NA,"AER, afex, aod, BayesFactor, bayestestR, bbmle, bdsmatrix,
 betareg, bife, biglm, blavaan, blme, boot, brms, broom, car,
 carData, censReg, cgam, clubSandwich, coxme, cplm, crch, curl,
-datawizard, effectsize, emmeans, epiR, estimatr, feisr, fixest,
-fungible, gam, gamlss, gamlss.data, gamm4, gbm, gee, geepack,
-geoR, GLMMadaptive, glmmTMB, gmnl, grDevices, gt, httr, interp,
-ivreg, JM, knitr, lavaan, lavaSearch2, lfe, lme4, lmerTest,
-lmtest, logistf, logitr, MASS, marginaleffects, Matrix,
-mclogit, mclust, MCMCglmm, merTools, metaBMA, metadat, metafor,
-metaplus, mgcv, mice, mlogit, mhurdle, mmrm, modelbased,
-multgee, nestedLogit, nlme, nnet, nonnest2, ordinal, panelr,
-parameters, parsnip, pbkrtest, performance, plm, poorman, pscl,
-psych, quantreg, Rcpp, rmarkdown, rms, rpart, robustbase,
-robustlmm, rstanarm (>= 2.21.1), rstantools (>= 2.1.0),
-rstudioapi, sandwich, speedglm, splines, statmod, survey,
-survival, testthat, truncreg, tweedie, TMB, VGAM",NA,"GPL-3",NA,NA,NA,NA,"no","4.2.3"
-"interp","interp","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.1-4",NA,"R (>= 3.5.0)","Rcpp (>= 0.12.9), deldir","Rcpp, RcppEigen","sp, Deriv, Ryacas, ggplot2, gridExtra, lattice, stringi,
+datawizard, effectsize, emmeans, epiR, estimatr, feisr, fixest
+(>= 0.11.2), fungible, gam, gamlss, gamlss.data, gamm4, gbm,
+gee, geepack, geoR, ggeffects, GLMMadaptive, glmmTMB, gmnl,
+grDevices, gt, httr, interp, ivreg, JM, knitr, lavaan,
+lavaSearch2, lfe, lme4, lmerTest, lmtest, logistf, logitr,
+MASS, marginaleffects, Matrix, mclogit, mclust, MCMCglmm,
+merTools, metaBMA, metadat, metafor, metaplus, mgcv, mice,
+mlogit, mhurdle, mmrm, modelbased, multgee, nestedLogit, nlme,
+nnet, nonnest2, ordinal, panelr, parameters, parsnip, pbkrtest,
+performance, plm, poorman, pscl, psych, quantreg, Rcpp,
+rmarkdown, rms, rpart, robustbase, robustlmm, rstanarm (>=
+2.21.1), rstantools (>= 2.1.0), rstudioapi, sandwich, speedglm,
+splines, statmod, survey, survival, testthat, truncreg,
+tweedie, TMB, VGAM, withr",NA,"GPL-3",NA,NA,NA,NA,"no","4.2.3"
+"interp","interp","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.1-5",NA,"R (>= 3.5.0)","Rcpp (>= 0.12.9), deldir","Rcpp, RcppEigen","sp, Deriv, Ryacas, ggplot2, gridExtra, lattice, stringi,
 stringr, scatterplot3d, MASS","RcppEigen","GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.3"
 "intervals","intervals","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.15.4",NA,"R (>= 2.9.0)","utils, graphics, methods",NA,NA,NA,"Artistic-2.0",NA,NA,NA,NA,"yes","4.2.3"
 "isoband","isoband","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.2.7",NA,NA,"grid, utils",NA,"covr, ggplot2, knitr, magick, microbenchmark, rmarkdown, sf,
@@ -351,7 +352,7 @@ spelling, speedglm, survey, survival, svglite, systemfonts,
 tibble, tidymodels, tidyr, tidyverse, tinysnapshot, tinytest,
 titanic, truncreg, tsModel, withr, workflows, yaml, xgboost,
 testthat (>= 3.0.0)",NA,"GPL (>= 3)",NA,NA,NA,NA,"yes","4.2.3"
-"markdown","markdown","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.11",NA,"R (>= 2.11.1)","utils, commonmark (>= 1.9.0), xfun (>= 0.38)",NA,"knitr, rmarkdown (>= 2.18), yaml, RCurl",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
+"markdown","markdown","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.12",NA,"R (>= 2.11.1)","utils, commonmark (>= 1.9.0), xfun (>= 0.38)",NA,"knitr, rmarkdown (>= 2.18), yaml, RCurl",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.2"
 "matrixStats","matrixStats","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.1.0",NA,"R (>= 2.12.0)",NA,NA,"base64enc, ggplot2, knitr, markdown, microbenchmark,
 R.devices, R.rsp",NA,"Artistic-2.0",NA,NA,NA,NA,"yes","4.2.3"
 "memoise","memoise","C:/Users/JR13/AppData/Local/R/win-library/4.2","2.0.1",NA,NA,"rlang (>= 0.4.10), cachem",NA,"digest, aws.s3, covr, googleAuthR, googleCloudStorageR, httr,
@@ -368,7 +369,7 @@ tidyr (>= 0.8.0), tidyselect, vctrs",NA,"compiler, covr, ggplot2, testthat (>= 3
 FLFishery, FLasher(>= 0.6.7), FLBRP(>= 2.5.8), doFuture,
 data.table, progressr","parallelly, ggrepel, patchwork",NA,"testthat, knitr, rmarkdown, FLa4a, doParallel",NA,"EUPL",NA,NA,NA,NA,"no","4.2.2"
 "munsell","munsell","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.5.0",NA,NA,"colorspace, methods",NA,"ggplot2, testthat",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
-"ncdf4","ncdf4","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.21",NA,NA,NA,NA,NA,NA,"GPL (>= 3)",NA,NA,NA,NA,"yes","4.2.2"
+"ncdf4","ncdf4","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.22",NA,NA,NA,NA,NA,NA,"GPL (>= 3)",NA,NA,NA,NA,"yes","4.2.3"
 "nloptr","nloptr","C:/Users/JR13/AppData/Local/R/win-library/4.2","2.0.3",NA,NA,NA,"testthat","knitr, rmarkdown, xml2, testthat (>= 3.0.0), covr",NA,"LGPL (>= 3)",NA,NA,NA,NA,"yes","4.2.3"
 "norm","norm","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.0-11.1",NA,NA,"stats",NA,NA,NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.3"
 "numDeriv","numDeriv","C:/Users/JR13/AppData/Local/R/win-library/4.2","2016.8-1.1",NA,"R (>= 2.11.1)",NA,NA,NA,NA,"GPL-2",NA,NA,NA,NA,"no","4.2.0"
@@ -427,7 +428,7 @@ webfakes, withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "profvis","profvis","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.3.8",NA,"R (>= 3.0)","htmlwidgets (>= 0.3.2), purrr, rlang (>= 0.4.9), stringr,
 vctrs",NA,"knitr, ggplot2, rmarkdown, testthat (>= 3.0.0), devtools,
 shiny, htmltools",NA,"GPL-3 | file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
-"progress","progress","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.2.2",NA,NA,"hms, prettyunits, R6, crayon",NA,"Rcpp, testthat, withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
+"progress","progress","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.2.3",NA,"R (>= 3.6)","crayon, hms, prettyunits, R6",NA,"Rcpp, testthat (>= 3.0.0), withr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.2"
 "progressr","progressr","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.14.0",NA,"R (>= 3.5.0)","digest, utils",NA,"graphics, tcltk, beepr, cli, crayon, pbmcapply, progress,
 purrr, foreach, plyr, doFuture, future, future.apply, furrr,
 RPushbullet, rstudioapi, shiny, commonmark, base64enc, tools",NA,"GPL (>= 3)",NA,NA,NA,NA,"no","4.2.3"
@@ -442,10 +443,10 @@ rlang (>= 1.1.1), vctrs (>= 0.6.3)","cli","covr, dplyr (>= 0.7.8), httr, knitr, 
 testthat (>= 3.0.0), tibble, tidyselect",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "qap","qap","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.1-2",NA,NA,NA,NA,"testthat",NA,"GPL-3",NA,NA,NA,NA,"yes","4.2.3"
 "qgam","qgam","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.3.4",NA,"R (>= 3.5.0), mgcv (>= 1.8-28)","shiny, plyr, doParallel, parallel, grDevices",NA,"knitr, rmarkdown, MASS, RhpcBLASctl, testthat",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.3"
-"QuickJSR","QuickJSR","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.0.7",NA,NA,"jsonlite, R6, Rcpp","Rcpp","testthat (>= 3.0.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
+"QuickJSR","QuickJSR","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.0.8",NA,NA,"jsonlite, R6, Rcpp","Rcpp","testthat (>= 3.0.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "R.methodsS3","R.methodsS3","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.8.2",NA,"R (>= 2.13.0)","utils",NA,"codetools",NA,"LGPL (>= 2.1)",NA,NA,NA,NA,"no","4.2.2"
 "R.oo","R.oo","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.25.0",NA,"R (>= 2.13.0), R.methodsS3 (>= 1.8.1)","methods, utils",NA,"tools",NA,"LGPL (>= 2.1)",NA,NA,NA,NA,"no","4.2.2"
-"R.utils","R.utils","C:/Users/JR13/AppData/Local/R/win-library/4.2","2.12.2",NA,"R (>= 2.14.0), R.oo","methods, utils, tools, R.methodsS3",NA,"datasets, digest (>= 0.6.10)",NA,"LGPL (>= 2.1)",NA,NA,NA,NA,"no","4.2.3"
+"R.utils","R.utils","C:/Users/JR13/AppData/Local/R/win-library/4.2","2.12.3",NA,"R (>= 2.14.0), R.oo","methods, utils, tools, R.methodsS3",NA,"datasets, digest (>= 0.6.10)",NA,"LGPL (>= 2.1)",NA,NA,NA,NA,"no","4.2.3"
 "R6","R6","C:/Users/JR13/AppData/Local/R/win-library/4.2","2.5.1",NA,"R (>= 3.0)",NA,NA,"testthat, pryr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "ragg","ragg","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.2.6",NA,NA,"systemfonts (>= 1.0.3), textshaping (>= 0.3.0)","systemfonts, textshaping","covr, graphics, grid, testthat (>= 3.0.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "RANN","RANN","C:/Users/JR13/AppData/Local/R/win-library/4.2","2.6.1",NA,NA,NA,NA,"testthat",NA,"GPL (>= 3)",NA,NA,NA,NA,"yes","4.2.3"
@@ -487,7 +488,7 @@ spelling, styler (>= 1.2.0), testthat (>= 3.0.2)",NA,"MIT + file LICENSE",NA,NA,
 "rgdal","rgdal","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.6-6",NA,"R (>= 3.5.0), methods, sp (>= 1.1-0)","grDevices, graphics, stats, utils","sp","knitr, DBI, RSQLite, maptools, mapview, rmarkdown, curl,
 rgeos",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.3"
 "rgeos","rgeos","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.6-3",NA,"R (>= 3.3.0), methods, sp (>= 1.1-0)","utils, stats, graphics","sp","maptools (>= 0.8-5), testthat, XML, maps, rgdal",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.3"
-"rJava","rJava","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.0-6",NA,"R (>= 3.6.0), methods",NA,NA,NA,NA,"LGPL-2.1",NA,NA,NA,NA,"yes","4.2.3"
+"rJava","rJava","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.0-10",NA,"R (>= 3.6.0), methods",NA,NA,NA,NA,"LGPL-2.1",NA,NA,NA,NA,"yes","4.2.3"
 "rlang","rlang","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.1.2",NA,"R (>= 3.5.0)","utils",NA,"cli (>= 3.1.0), covr, crayon, fs, glue, knitr, magrittr,
 methods, pillar, rmarkdown, stats, testthat (>= 3.0.0), tibble,
 usethis, vctrs (>= 0.2.3), withr","winch","MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
@@ -505,7 +506,7 @@ lifecycle (>= 1.0.3), rlang",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
 "rnaturalearthdata","rnaturalearthdata","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.1.0",NA,"R (>= 3.1.1)","sp (>= 1.0.15)",NA,"knitr (>= 1.12.3), testthat (>= 0.9.1)",NA,"CC0",NA,NA,NA,NA,"no","4.2.3"
 "rnaturalearthhires","rnaturalearthhires","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.2.1",NA,"R (>= 3.1.1)","sp (>= 1.0.15)",NA,"knitr (>= 1.12.3), testthat (>= 0.9.1)",NA,"CC0",NA,NA,NA,NA,"no","4.2.2"
 "rngtools","rngtools","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.5.2",NA,"R (>= 3.2.0), methods","digest, utils, stats, parallel",NA,"covr, RUnit, testthat",NA,"GPL-3",NA,NA,NA,NA,"no","4.2.3"
-"RODBC","RODBC","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.3-21",NA,"R (>= 4.0.0)","stats",NA,NA,NA,"GPL-2 | GPL-3",NA,NA,NA,NA,"yes","4.2.3"
+"RODBC","RODBC","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.3-23",NA,"R (>= 4.0.0)","stats",NA,NA,NA,"GPL-2 | GPL-3",NA,NA,NA,NA,"yes","4.2.3"
 "roxygen2","roxygen2","C:/Users/JR13/AppData/Local/R/win-library/4.2","7.2.3",NA,"R (>= 3.3)","brew, cli (>= 3.3.0), commonmark, desc (>= 1.2.0), knitr,
 methods, pkgload (>= 1.0.2), purrr (>= 0.3.3), R6 (>= 2.1.2),
 rlang (>= 1.0.6), stringi, stringr (>= 1.0.0), utils, withr,
@@ -557,12 +558,12 @@ rlang (>= 1.0.0), selectr, tibble, xml2 (>= 1.3), withr",NA,"covr, knitr, readr,
 "s2","s2","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.1.4",NA,"R (>= 3.0.0)","Rcpp, wk (>= 0.6.0)","Rcpp, wk","bit64, testthat (>= 3.0.0), vctrs",NA,"Apache License (== 2.0)",NA,NA,NA,NA,"yes","4.2.3"
 "sass","sass","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.4.7",NA,NA,"fs (>= 1.2.4), rlang (>= 0.4.10), htmltools (>= 0.5.1), R6,
 rappdirs",NA,"testthat, knitr, rmarkdown, withr, shiny, curl",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
-"scales","scales","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.2.1",NA,"R (>= 3.2)","farver (>= 2.0.3), labeling, lifecycle, munsell (>= 0.5), R6,
-RColorBrewer, rlang (>= 1.0.0), viridisLite",NA,"bit64, covr, dichromat, ggplot2, hms (>= 0.5.0), stringi,
-testthat (>= 3.0.0), waldo (>= 0.4.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
+"scales","scales","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.3.0",NA,"R (>= 3.6)","cli, farver (>= 2.0.3), glue, labeling, lifecycle, munsell (>=
+0.5), R6, RColorBrewer, rlang (>= 1.0.0), viridisLite",NA,"bit64, covr, dichromat, ggplot2, hms (>= 0.5.0), stringi,
+testthat (>= 3.0.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "selectr","selectr","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.4-2",NA,"R (>= 3.0)","methods, stringr, R6",NA,"testthat, XML, xml2",NA,"BSD_3_clause + file LICENCE",NA,NA,NA,NA,"no","4.2.3"
 "semver","semver","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.2.0",NA,NA,"Rcpp (>= 0.12.8), assertthat, utils","Rcpp","testthat, covr, knitr, rmarkdown",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
-"seriation","seriation","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.5.1",NA,"R (>= 2.14.0)","ca, cluster, colorspace, foreach, gclus, grDevices, grid,
+"seriation","seriation","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.5.3",NA,"R (>= 2.14.0)","ca, cluster, colorspace, foreach, gclus, grDevices, grid,
 MASS, qap, registry, stats, TSP, vegan",NA,"dbscan, DendSer, dendextend, doParallel, GA, ggplot2, keras,
 Rtsne, scales, smacof, tensorflow, testthat, umap",NA,"GPL-3",NA,NA,NA,NA,"yes","4.2.3"
 "sessioninfo","sessioninfo","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.2.2",NA,"R (>= 2.10)","cli (>= 3.1.0), tools, utils",NA,"callr, covr, mockery, reticulate, rmarkdown, testthat, withr",NA,"GPL-2",NA,NA,NA,NA,"no","4.2.3"
@@ -581,7 +582,7 @@ tmap (>= 2.0), vctrs, wk",NA,"GPL-2 | MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2
 (>= 0.2.2), stars, ncmeta, tidyr, ggplot2, magrittr, sp, rlang",NA,"Apache License",NA,NA,NA,NA,"no","4.2.3"
 "sgeostat","sgeostat","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.0-27",NA,"stats, grDevices, graphics, R (>= 2.0.0)",NA,NA,NA,NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.0"
 "shape","shape","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.4.6",NA,"R (>= 2.01)","stats, graphics, grDevices",NA,NA,NA,"GPL (>= 3)",NA,NA,NA,NA,"no","4.2.0"
-"shiny","shiny","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.7.5.1",NA,"R (>= 3.0.2), methods","utils, grDevices, httpuv (>= 1.5.2), mime (>= 0.3), jsonlite
+"shiny","shiny","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.8.0",NA,"R (>= 3.0.2), methods","utils, grDevices, httpuv (>= 1.5.2), mime (>= 0.3), jsonlite
 (>= 0.9.16), xtable, fontawesome (>= 0.4.0), htmltools (>=
 0.5.4), R6 (>= 2.0), sourcetools, later (>= 1.0.0), promises
 (>= 1.1.0), tools, crayon, rlang (>= 0.4.10), fastmap (>=
@@ -592,10 +593,10 @@ magrittr, yaml, future, dygraphs, ragg, showtext, sass",NA,"GPL-3 | file LICENSE
 "sourcetools","sourcetools","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.1.7-1",NA,"R (>= 3.0.2)",NA,NA,"testthat",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "sp","sp","C:/Users/JR13/AppData/Local/R/win-library/4.2","2.1-1",NA,"R (>= 3.5.0), methods","utils, stats, graphics, grDevices, lattice, grid",NA,"RColorBrewer, gstat, deldir, knitr, rmarkdown, sf, terra,
 raster",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.3"
-"spacetime","spacetime","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.3-0",NA,"R (>= 3.0.0)","graphics, utils, stats, methods, lattice, sp (>= 1.1-0), zoo
+"spacetime","spacetime","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.3-1",NA,"R (>= 3.0.0)","graphics, utils, stats, methods, lattice, sp (>= 1.1-0), zoo
 (>= 1.7-9), xts (>= 0.8-8), intervals",NA,"adehabitatLT, cshapes (>= 2.0), foreign, gstat (>= 1.0-16),
 maps, mapdata, plm, raster, RColorBrewer, rmarkdown,
-RPostgreSQL, knitr, googleVis, ISOcodes, markdown, sf, sftime",NA,"GPL (>= 2)",NA,NA,NA,NA,"no","4.2.3"
+RPostgreSQL, knitr, googleVis, ISOcodes, markdown, sf, sftime",NA,"GPL (>= 2)",NA,NA,NA,NA,"no","4.2.2"
 "spatstat.data","spatstat.data","C:/Users/JR13/AppData/Local/R/win-library/4.2","3.0-3",NA,"R (>= 3.5.0)","spatstat.utils (>= 3.0-2), Matrix",NA,"spatstat.geom, spatstat.random, spatstat.explore,
 spatstat.model, spatstat.linnet",NA,"GPL (>= 2)",NA,NA,NA,NA,"no","4.2.3"
 "spatstat.geom","spatstat.geom","C:/Users/JR13/AppData/Local/R/win-library/4.2","3.2-7",NA,"R (>= 3.5.0), spatstat.data (>= 3.0), stats, graphics,
@@ -603,7 +604,7 @@ grDevices, utils, methods","spatstat.utils (>= 3.0-2), deldir (>= 1.0-2), polycl
 1.10-0)",NA,"spatstat.random, spatstat.explore, spatstat.model,
 spatstat.linnet, spatial, fftwtools (>= 0.9-8), spatstat (>=
 3.0)",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.3"
-"spatstat.random","spatstat.random","C:/Users/JR13/AppData/Local/R/win-library/4.2","3.2-1",NA,"R (>= 3.5.0), spatstat.data (>= 3.0), spatstat.geom (>=
+"spatstat.random","spatstat.random","C:/Users/JR13/AppData/Local/R/win-library/4.2","3.2-2",NA,"R (>= 3.5.0), spatstat.data (>= 3.0), spatstat.geom (>=
 3.2-1), stats, utils, methods, grDevices","spatstat.utils (>= 3.0-2)",NA,"spatial, spatstat.linnet (>= 3.0), spatstat.explore,
 spatstat.model, spatstat (>= 3.0), gsl",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.3"
 "spatstat.utils","spatstat.utils","C:/Users/JR13/AppData/Local/R/win-library/4.2","3.0-4",NA,"R (>= 3.3.0), stats, graphics, grDevices, utils, methods",NA,NA,"spatstat.model",NA,"GPL (>= 2)",NA,NA,NA,NA,"yes","4.2.3"
@@ -657,12 +658,12 @@ tidyverse",NA,"GPL (>= 3)",NA,NA,NA,NA,NA,"4.2.2"
 "systemfonts","systemfonts","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.0.5",NA,"R (>= 3.2.0)",NA,"cpp11 (>= 0.2.1)","covr, knitr, rmarkdown, testthat (>= 2.1.0), tools",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "terra","terra","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.7-55",NA,"R (>= 3.5.0)","methods, Rcpp (>= 1.0-10)","Rcpp","parallel, tinytest, ncdf4, sf (>= 0.9-8), deldir, XML,
 leaflet, htmlwidgets",NA,"GPL (>= 3)",NA,NA,NA,NA,"yes","4.2.3"
-"testthat","testthat","C:/Users/JR13/AppData/Local/R/win-library/4.2","3.2.0",NA,"R (>= 3.6.0)","brio (>= 1.1.3), callr (>= 3.7.3), cli (>= 3.6.1), desc (>=
-1.4.2), digest (>= 0.6.33), ellipsis (>= 0.3.2), evaluate (>=
-0.21), jsonlite (>= 1.8.7), lifecycle (>= 1.0.3), magrittr (>=
-2.0.3), methods, pkgload (>= 1.3.2.1), praise (>= 1.0.0),
-processx (>= 3.8.2), ps (>= 1.7.5), R6 (>= 2.5.1), rlang (>=
-1.1.1), utils, waldo (>= 0.5.1), withr (>= 2.5.0)",NA,"covr, curl (>= 0.9.5), diffviewer (>= 0.1.0), knitr,
+"testthat","testthat","C:/Users/JR13/AppData/Local/R/win-library/4.2","3.2.1",NA,"R (>= 3.6.0)","brio (>= 1.1.3), callr (>= 3.7.3), cli (>= 3.6.1), desc (>=
+1.4.2), digest (>= 0.6.33), evaluate (>= 0.21), jsonlite (>=
+1.8.7), lifecycle (>= 1.0.3), magrittr (>= 2.0.3), methods,
+pkgload (>= 1.3.2.1), praise (>= 1.0.0), processx (>= 3.8.2),
+ps (>= 1.7.5), R6 (>= 2.5.1), rlang (>= 1.1.1), utils, waldo
+(>= 0.5.1), withr (>= 2.5.0)",NA,"covr, curl (>= 0.9.5), diffviewer (>= 0.1.0), knitr,
 rmarkdown, rstudioapi, shiny, usethis, vctrs (>= 0.1.0), xml2",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "textshaping","textshaping","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.3.7",NA,"R (>= 3.2.0)","systemfonts (>= 1.0.0)","cpp11 (>= 0.2.1), systemfonts (>= 1.0.0)","covr, knitr, rmarkdown",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "ThorsonUtilities","ThorsonUtilities","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.0",NA,NA,NA,NA,NA,NA,"What license is it under?",NA,NA,NA,NA,"no","4.2.2"
@@ -693,15 +694,15 @@ purrr (>= 1.0.1), ragg (>= 1.2.5), readr (>= 2.1.4), readxl (>=
 tidyr (>= 1.3.0), xml2 (>= 1.3.3)",NA,"covr (>= 3.6.1), feather (>= 0.3.5), glue (>= 1.6.2), mockr
 (>= 0.2.0), knitr (>= 1.41), rmarkdown (>= 2.20), testthat (>=
 3.1.6)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
-"tiff","tiff","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.1-11",NA,"R (>= 2.9.0)",NA,NA,NA,NA,"GPL-2 | GPL-3",NA,NA,NA,NA,"yes","4.2.0"
+"tiff","tiff","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.1-12",NA,"R (>= 2.9.0)",NA,NA,NA,NA,"GPL-2 | GPL-3",NA,NA,NA,NA,"yes","4.2.3"
 "timechange","timechange","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.2.0",NA,"R (>= 3.3)",NA,"cpp11 (>= 0.2.7)","testthat (>= 0.7.1.99), knitr",NA,"GPL-3",NA,NA,NA,NA,"yes","4.2.3"
-"tinytex","tinytex","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.48",NA,NA,"xfun (>= 0.29)",NA,"testit, rstudioapi",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
-"TMB","TMB","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.9.6",NA,"R (>= 3.0.0)","graphics, methods, stats, utils, Matrix (>= 1.0-12)","Matrix, RcppEigen","numDeriv, parallel",NA,"GPL-2",NA,NA,NA,NA,"yes","4.2.3"
+"tinytex","tinytex","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.49",NA,NA,"xfun (>= 0.29)",NA,"testit, rstudioapi",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
+"TMB","TMB","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.9.9",NA,"R (>= 3.0.0)","graphics, methods, stats, utils, Matrix (>= 1.0-12)","Matrix, RcppEigen","numDeriv, parallel",NA,"GPL-2",NA,NA,NA,NA,"yes","4.2.3"
 "TMBhelper","TMBhelper","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.4.0",NA,NA,"abind, tmbstan",NA,NA,NA,"GPL-3",NA,NA,NA,NA,"no","4.2.2"
 "tmbstan","tmbstan","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.0.91",NA,"rstan","methods, Rcpp, TMB","StanHeaders, rstan, BH, Rcpp, RcppEigen, TMB, RcppParallel",NA,NA,"GPL (>= 3)",NA,NA,NA,NA,"yes","4.2.3"
 "TSP","TSP","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.2-4",NA,"R (>= 3.5.0)","graphics, foreach, utils, stats, grDevices",NA,"maps, doParallel, testthat",NA,"GPL-3",NA,NA,NA,NA,"yes","4.2.3"
 "tzdb","tzdb","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.4.0",NA,"R (>= 3.5.0)",NA,"cpp11 (>= 0.4.2)","covr, testthat (>= 3.0.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
-"units","units","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.8-4",NA,"R (>= 3.0.2)","Rcpp","Rcpp (>= 0.12.10)","NISTunits, measurements, xml2, magrittr, pillar (>= 1.3.0),
+"units","units","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.8-5",NA,"R (>= 3.0.2)","Rcpp","Rcpp (>= 0.12.10)","NISTunits, measurements, xml2, magrittr, pillar (>= 1.3.0),
 dplyr (>= 1.0.0), vctrs (>= 0.3.1), ggplot2 (> 3.2.1), testthat
 (>= 3.0.0), vdiffr, knitr, rmarkdown",NA,"GPL-2",NA,NA,NA,NA,"yes","4.2.3"
 "urlchecker","urlchecker","C:/Users/JR13/AppData/Local/R/win-library/4.2","1.0.1",NA,"R (>= 3.3)","cli, curl, tools, xml2",NA,"covr",NA,"GPL-3",NA,NA,NA,NA,"no","4.2.3"
@@ -717,7 +718,7 @@ withr",NA,"Apache License (== 2.0) | file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "V8","V8","C:/Users/JR13/AppData/Local/R/win-library/4.2","4.4.0",NA,NA,"Rcpp (>= 0.12.12), jsonlite (>= 1.0), curl (>= 1.0), utils","Rcpp","testthat, knitr, rmarkdown",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "VAST","VAST","C:/Users/JR13/AppData/Local/R/win-library/4.2","3.10.1",NA,"TMB (>= 1.8.0), FishStatsUtils (>= 2.12.1), R (>= 3.5.0)","abind, effects, INLA, stats, ThorsonUtilities, utils, remotes,
 devtools",NA,"testthat, knitr, rmarkdown, pscl, tweedie, mgcv, lme4",NA,"file LICENSE",NA,NA,NA,NA,"no","4.2.2"
-"vctrs","vctrs","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.6.4",NA,"R (>= 3.5.0)","cli (>= 3.4.0), glue, lifecycle (>= 1.0.3), rlang (>= 1.1.0)",NA,"bit64, covr, crayon, dplyr (>= 0.8.5), generics, knitr,
+"vctrs","vctrs","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.6.5",NA,"R (>= 3.5.0)","cli (>= 3.4.0), glue, lifecycle (>= 1.0.3), rlang (>= 1.1.0)",NA,"bit64, covr, crayon, dplyr (>= 0.8.5), generics, knitr,
 pillar (>= 1.4.4), pkgdown (>= 2.0.1), rmarkdown, testthat (>=
 3.0.0), tibble (>= 3.1.3), waldo (>= 0.2.0), withr, xml2,
 zeallot",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
@@ -736,7 +737,7 @@ utils, waldo, xml2",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "whisker","whisker","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.4.1",NA,NA,NA,NA,"markdown",NA,"GPL-3",NA,NA,NA,NA,"no","4.2.3"
 "withr","withr","C:/Users/JR13/AppData/Local/R/win-library/4.2","2.5.2",NA,"R (>= 3.2.0)","graphics, grDevices, stats",NA,"callr, covr, DBI, knitr, lattice, methods, rlang, rmarkdown
 (>= 2.12), RSQLite, testthat (>= 3.0.0)",NA,"MIT + file LICENSE",NA,NA,NA,NA,"no","4.2.3"
-"wk","wk","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.9.0",NA,"R (>= 2.10)",NA,NA,"testthat (>= 3.0.0), vctrs (>= 0.3.0), sf, tibble, readr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
+"wk","wk","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.9.1",NA,"R (>= 2.10)",NA,NA,"testthat (>= 3.0.0), vctrs (>= 0.3.0), sf, tibble, readr",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
 "xfun","xfun","C:/Users/JR13/AppData/Local/R/win-library/4.2","0.41",NA,NA,"stats, tools",NA,"testit, parallel, codetools, rstudioapi, tinytex (>= 0.30),
 mime, markdown (>= 1.5), knitr (>= 1.42), htmltools, remotes,
 pak, rhub, renv, curl, jsonlite, magick, yaml, rmarkdown",NA,"MIT + file LICENSE",NA,NA,NA,NA,"yes","4.2.3"
