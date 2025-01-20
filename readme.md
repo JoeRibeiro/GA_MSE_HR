@@ -1,1 +1,1 @@
-Exploring MSE for sardine, pirated from one of Simon Fischer's forks of a branch of a fork
+Exploring Management Strategies for sardine, in the MSE framework. This work relates to my old role as a pelagic fisheries scientists and was passed on to Rosana Ourens-Chans (Cefas).
